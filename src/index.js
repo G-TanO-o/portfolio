@@ -1,8 +1,21 @@
-import "./style.css";
-import { devineLog } from "./js/utility/helpers";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import './App.css'
+import { BrowserRouter } from "react-router-dom"
 
-devineLog("Hey, ik ben een JS file");
-const arr = [1 , 2,  3];
 
-const ES6Stuff = () => devineLog("Ik kan ES6 stuff aan", ...arr);
-ES6Stuff();
+ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById("root")
+  );
+
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

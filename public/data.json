@@ -1,0 +1,53 @@
+[
+    {
+        "id": "6a",
+        "title": "Dilemmas",
+        "uitleg": "The newest React webapp that helps you with all your dilemmas",
+        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
+        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "images": {
+            "preview": "../assets/img/test_img.png",
+            "header": "mac_bodhi.png",
+            "voorb": "voorb.png"
+        },
+        "allPics": ["1.png", "2.png", "3.png"],
+        "client": "client",
+        "team": "team",
+        "year": 2020,
+        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+    },
+    {
+        "id": "2a",
+        "title": "Dilemmas",
+        "uitleg": "A designe and Developed Webapp that helps you with opening your thirt eye",
+        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
+        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "images": {
+            "preview": "../assets/img/dilemma_test.png",
+            "header": "header.png",
+            "voorb": "voorb.png"
+        },
+        "allPics": ["1.png", "2.png", "3.png"],
+        "client": "client",
+        "team": "team",
+        "year": 2020,
+        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+    },
+    {
+        "id": "3b",
+        "title": "Humo",
+        "uitleg": "The newest React webapp that helps you with all your dilemmas",
+        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
+        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "images": {
+            "preview": "../assets/img/dilemma_test.png",
+            "header": "header.png",
+            "voorb": "voorb.png"
+        },
+        "allPics": ["1.png", "2.png", "3.png"],
+        "client": "client",
+        "team": "team",
+        "year": 2020,
+        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+    }
+]

@@ -1,6 +1,36 @@
 :root {
-  --backgroundColor: #eaeae9;
-  --textColor: #463636;
-  --anotherColor: #bada55;
-  --margin: 2rem;
+  --rood: #FF4325;
+  --green: #00CFA5;
+  --klei: #FEDFC2;
+  --blue: #0B2766;
+  --black: black;
+  --white: white;
+
+  /* GRADIENT */
+  --grijs_blauw: linear-gradient(#ADB6C5 , #ADCEDA);
+  --groen_beige: linear-gradient(#70957B , #CEC0B2);
+  --geel_oranje: linear-gradient(#EBD56B , #D7AFA2);
+  --blauw_geel: linear-gradient(#58689B , #D2BFA9);
+  --grijs_azure: linear-gradient(#ADB6C5 , #ADCEDA);
+  --bruin_choco: linear-gradient(#AD685F , #BFA493);
+  --groen_munt: linear-gradient(#7CB5A0 , #DDE3CB);
+
+
+
+   /* fonts weights */
+   --fontWeightLight: 400;
+   --fontWeightNormal: 600;
+   --fontWeightBold: 900;
+
+   /* fontsize*/
+   --fontH1: 4.8rem;
+   --fontH2: 3.6rem;
+   --fontH3: 2.4rem;
+   --fontH4: 1.8rem;
+
+   /* border */
+   --border: solid .2rem black;
+
 }
+
+@custom-media --only-small-screen (width >= 360px);

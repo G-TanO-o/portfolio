@@ -1,0 +1,97 @@
+.contact {
+    display: flex;
+    flex: content;
+    align-items: center;
+}
+
+.contact_title {
+    font-family: 'Emberly-Black', sans-serif;
+    font-size: 14.4rem;
+    margin-top: -5rem;
+}
+
+.contact_border {
+    border: solid .3rem black;
+    width: 94vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.label {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.input_name {
+    font-size: 2.4rem;
+    font-weight: 300;
+    width: 20rem;
+    border: solid .2rem black;
+    background-color: #353535;
+    padding: .5rem 1rem;
+    color: white;
+}
+
+.select {
+    font-size: 2.4rem;
+    width: 29rem;
+    border: solid .2rem black;
+    background-color: #353535;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 0;
+}
+
+.option {
+    background-color: #525252;
+}
+
+.textarea {
+    font-size: 2.4rem;
+    border: solid .2rem black;
+    background-color: #353535;
+    padding: .5rem 1rem;
+    color: white;
+
+}
+
+.send {
+    border: solid .2rem black;
+    background-color: transparent;
+    padding: 1rem 2rem .5rem 2rem;
+}
+ .send p {
+    font-family: 'Emberly-Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+ }
+
+ .intoche_wrap {
+     margin-left: 1.5rem;
+     margin-top: 2rem;
+}
+
+ .intoche {
+    font-size: 1.8rem;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: 35rem;
+     margin-bottom: 2rem;
+ }
+
+ .intoche img {
+     margin-right: 1rem;
+ }

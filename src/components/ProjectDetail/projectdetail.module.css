@@ -1,0 +1,121 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+}
+.title {
+    font-family: 'Emberly-Black', sans-serif;
+    font-size: 6.4rem;
+    margin-bottom: 1rem;
+}
+
+.uitleg {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 31rem;
+
+}
+.header_img_container {
+    width: 34rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opvul_img {
+    height: 6rem;
+    width: 20rem;
+    background-color: transparent;
+}
+
+.img_header {
+    width: 34rem;
+    height: auto;
+}
+
+.about {
+    font-family: 'Emberly-Black', sans-serif;
+    font-size: 22.4rem;
+    margin-bottom: -7rem;
+    margin-top: -4rem;
+
+    margin: -4rem 0 -9rem -2rem;
+}
+
+.content_backcolor {
+    background-color: #F6F6F6;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.content {
+    margin-top: 2rem;
+    width: 93vw;    
+}
+
+
+.intro_vet{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+.intro_deel1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.intro_deel2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.img_content {
+    width: 80vw;
+    height: auto;
+}
+
+.underline {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgb(247, 178, 138) 60%, rgb(247, 178, 138) 100%);
+}
+
+.img_allPics {
+width: 100vw;
+height: auto;
+}
+
+.info {
+    width: 93vw;
+    margin-top: 3rem;
+}
+
+.info_section {
+    margin-bottom: 6rem;
+}
+
+.info_title {
+    font-size: 6.4rem;
+    margin-bottom: 1rem;
+}
+
+.info_text {
+    font-size: 3.6rem;
+    margin-bottom: .5rem;
+}
+
+.line {
+    width: 34rem;
+    height: .3rem;
+    background-color: black;
+  }

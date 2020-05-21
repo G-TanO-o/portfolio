@@ -17,10 +17,10 @@ import {useStores} from "../../hooks";
 const ProjectDetail = () => {
 
     const { id } = useParams();    
-    const {dataStore} = useStores();
+    const {dataStore, uiStore} = useStores();
     console.log('dit is de datastore', dataStore);
 
-    
+    uiStore.setCurrentPage("ProjectDetail")
     
     console.log("dit is het id", id);
     // console.log(work);

@@ -9,10 +9,14 @@ import { NavLink} from "react-router-dom";
 import {ROUTES} from "../../consts";
 
 import styles from "../Home/home.module.css";
+import { useStores } from "../../hooks";
 
 
 
 const Home = () => {
+    const {uiStore} = useStores(); 
+
+    uiStore.setCurrentPage("")
 
     return useObserver( () => 
         <>

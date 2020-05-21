@@ -21,9 +21,12 @@ import { ROUTES } from '../../consts';
 
 const Projects = ({color}) => {
     const store = useStores(); 
+    const {uiStore} = useStores(); 
+
     const [open, setOpen] = useState(false);
     const menuId = "main-menu";
 
+    uiStore.setCurrentPage("work")
 
     return useObserver( () => 
         <>

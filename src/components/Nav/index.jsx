@@ -11,14 +11,18 @@ import Hamburger from "../Hamburger";
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../consts';
 
-
+import { useStores} from "../../hooks";
 
 const Nav = ({color}) => {
 
     const [open, setOpen] = useState(false);
     const menuId = "main-menu";
     console.log(color);
-    
+    const { uiStore } = useStores();
+
+    const currentPage = uiStore.currentPage;
+
+
 
     return useObserver( () => 
         <>
@@ -27,23 +31,18 @@ const Nav = ({color}) => {
                     <Menu open={open} setOpen={setOpen} id={menuId} />
                 </div>
                 <div className={`${styles.nav_click} ${styles.grid_container}`}>
-                    {/* { if(page != home) (
-                        <h1>Home</h1>
-                    )else (
-
-                    )
-                    } */}
-                    {/* {
-                    if(page === detail) (
+               
+                {(currentPage !== "ProjectDetail") ? 
+                    <h1 className={`${styles.header}`}>{uiStore.currentPage}</h1>
+                    :
+                    <NavLink to={ROUTES.projects}>
+                        <img className={`${styles.arrow_back}`} src={"../assets/img/arrow_back_white.svg"} alt=""/>
+                    </NavLink>
+                }
+                
                         
-                    ) else (
-                        <h1 className={`${styles.header}`}>work</h1>
-                    )
-                    } */}
-
-                        <NavLink to={ROUTES.projects}>
-                            <img className={`${styles.arrow_back}`} src={"../assets/img/arrow_back_white.svg"} alt=""/>
-                        </NavLink>
+                   
+                    
                     <div className={`${styles.hamburger}`}>
                         <Hamburger color={color} open={open} setOpen={setOpen} aria-controls={menuId}/>
                     </div>

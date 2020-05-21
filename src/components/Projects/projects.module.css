@@ -1,77 +1,67 @@
-.ul_center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.grid_container {
+    display: grid;
+    grid-template-columns: 5vw 95vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "side header" "side content" "foot foot";
 }
-.title {
-    font-size: 4.8rem;
-    font-family: 'Emberly-Black', sans-serif;
-    margin-bottom: 2rem;
+  
+.foot { 
+    grid-area: foot; 
+    background-color: white;
+    border-top: .3rem solid black;
+}
+  
+.header { 
+    grid-area: header; 
+    background-color: white;
+    /* border-left: .3rem solid black; */
+    border-bottom: .3rem solid black;
+    flex-direction: row;
+    margin-left: -5vw;
+
+}
+  
+.content {
+    grid-area: content;
+    /* border-left: .3rem solid black; */
+    overflow: hidden;
+}
+  
+.corner {
+    grid-area: side;
+    background-color: white;
+    z-index: 2;
+    border-right: .3rem solid black;
+
 }
 
-.li_work {
-    height: 200px;
-    width: 257px;
-    list-style: none;
-    position: relative;
-    margin-bottom: 3rem;
+.blob {
+    grid-area: content; 
+    transform: rotate(-90deg) scale(2);
+    width: 90vw;
+    height: 80vh;
+    z-index: -1;
+    position:fixed;
+
 }
 
-.img__wrap {
-    position: relative;
-    max-width: 30rem;
-    max-height: 23rem;
-  }
-
-.work_imagePreview {
-    height: 200px;
-    width: 257px;
+.ul_list {
+    padding: 4rem;
+    text-align: left;
 }
 
+.li_link {
+    text-decoration: none;
+}
 
-.work_imagePreview:hover .info_hover {
-    visibility: visible;
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.623);
+.li_list {
+    font-family: 'AcuminPro-Regular', sans-serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
     color: white;
 }
 
-.img__description {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.72);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .5s, visibility .5s;
+.li_list:hover {
+
+    color: rgb(172, 97, 97);
 }
-
-.img__wrap:hover .img__description {
-    visibility: visible;
-    opacity: 1;
-  }
-
-.img_title {
-    /* margin-top: 2rem; */
-    text-align: center;
-    font-family: 'Emberly-Black', sans-serif;
-    font-size:2.4rem ;
-}
-
-.img_text {
-    margin: 1rem 0.5rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    width: 15rem;
-}
-  
-
-
- 
-

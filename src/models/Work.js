@@ -1,4 +1,4 @@
-import {observable, decorate, computed, action, configure} from 'mobx';
+import { decorate, configure} from 'mobx';
 
 configure({enforceActions: 'observed'});
 
@@ -17,7 +17,7 @@ class Work {
 }
 
 decorate(Work, {
-    id: observable,
+    // id: observable,
   });
 
 export default Work;

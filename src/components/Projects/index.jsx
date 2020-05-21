@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from 'react';
 import { useObserver } from "mobx-react-lite";
 
 
@@ -8,45 +8,52 @@ import styles from "../Projects/projects.module.css";
 import { useStores } from "../../hooks";
 
 import WorkComponent from "../Work"
-import Menu from "../Menu";
-import Contact from "../Contact";
+import Hamburger from "../Hamburger";
+import { NavLink } from 'react-router-dom';
+import { ROUTES } from '../../consts';
+// import Menu from "../Menu";
+// import Contact from "../Contact";
 
 
 
 
 
 
-const Projects = () => {
+const Projects = ({color}) => {
     const store = useStores(); 
+    const [open, setOpen] = useState(false);
+    const menuId = "main-menu";
+
 
     return useObserver( () => 
         <>
-            <Nav/>
-            <article className={`${styles.ul_center}`}>
-                <p className={`${styles.title}`}>Some of my work</p>
-                <ul className={styles.ul_work}>
+        <div className={`${styles.grid_container}`}>
 
-                    {/* <li className={`${styles.li_work}`}>
-                        <div className={styles.img__wrap}>
-                            <img src={require("../../assets/img/dilemma_test.png")} alt="" className={`${styles.work_imagePreview}`}>
-                            </img>
-                            <div className={styles.img__description}>
-                            <p className={styles.img_title}>Dilemmas</p>
-                            <p className={styles.img_text}>The newest React webapp that helps you with all your dilemmas</p>
-                            </div>
-                        </div>
-                    </li> */}
-
-                    
-
+            <div className={`${styles.header}`}>
+            <Nav color="black"/>
+            </div>
+            <div className={`${styles.corner}`}>
+            </div>
+            <div className={`${styles.corner}`}>
+            </div>
+            <div className={`${styles.content}`}>
+                <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+                <ul className={`${styles.ul_list}`}>
                     {store.dataStore.works.map(work => (
-                    <WorkComponent key={work.id} work={work} />
+                        <NavLink to={`${ROUTES.projectDetail.to}${work.id}`} className={`${styles.li_link}`}>
+                             <li className={`${styles.li_list}`} key={work.id} work={work}>{work.title}</li>
+                        </NavLink>
+                   
                     ))}
-
                 </ul>
-            </article>
-            {/* <Contact/> */}
+            </div>
+            <div className={`${styles.foot}`}>
+                <h1>foot</h1>
+            </div>
 
+            {/* <Contact/> */}
+        </div>
+            
            
         </>
     )

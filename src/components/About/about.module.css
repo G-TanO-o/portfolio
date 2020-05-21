@@ -1,11 +1,4 @@
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    overflow: hidden;
-    padding: 1.5rem;
-}
+
 
 .title {
     font-family: 'Emberly-Black', sans-serif;

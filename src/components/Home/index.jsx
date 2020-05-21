@@ -16,25 +16,22 @@ const Home = () => {
 
     return useObserver( () => 
         <>
-            <article className={`${styles.home}`}>
-                <div className={`${styles.overflow}`}>
-                    <p className={`${styles.title} ${styles.name} ${styles.blinking}`}>Gaetan Ferhah</p>
-                    <div className={`${styles.dad}`}>
-                        <p className={`${styles.title} ${styles.spatie_dev} ${styles.marginB03}`}>development</p>
-                        <p className={`${styles.title} ${styles.spatie_animation} ${styles.center} ${styles.marginB03}`}>animation</p>
-                        <p className={`${styles.title} ${styles.spatie_design} ${styles.center} ${styles.marginB03}`}>design</p>
-                    </div>
-                    <span className={`${styles.line}`}></span>
-                    <span className={`${styles.line2}`}></span>
-                </div>
-                < NavLink 
-                className={`${styles.link_projects}`}
-                // activeClassName={styles.dilemma__menu__active}
-                to={ROUTES.projects}>
-                Projects
-                <img className={`${styles.link_projects_arrow}`} src={ require("../../assets/img/arrow.svg")} alt="logo"></img>
+            <article className={`${styles.home_content}`}>
+            <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+            <div className={`${styles.content}`}>
+                <h1 className={`${styles.hi}`}>Hi,</h1>
+                <p className={`${styles.name}`}>My name is Gaetan</p>
+                <p className={`${styles.text}`}>I’m a Deviner<br></br>
+                    Go ahead and look<br></br> wath I have made
+                </p>
+
+                <NavLink to={ROUTES.projects}>
+                    <img className={`${styles.arrow_long}`} src={"../assets/img/arrow_long.png"} alt=""/>
                 </NavLink>
-                <p className={`${styles.side_portfolio}`}>Portfolio</p>
+
+            </div>
+               
+                
             </article>
         </>
     )

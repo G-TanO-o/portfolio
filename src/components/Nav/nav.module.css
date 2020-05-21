@@ -1,101 +1,54 @@
-.nav {
-    display: flex;
-    flex-direction: column;
+.grid_container {
+  display: grid;
+  grid-template-columns: 80vw 20vw;
+  grid-template-areas: "header" "hamburger";
 }
 
-.nav_click {
+.nav {
   display: flex;
   flex-direction: row;
 }
 
-h1 {
+.nav_click {
+  flex-direction: row;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+}
+
+.hamburger { 
+  grid-area: "hamburger";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: tomato; */
+  padding: 1rem;
+
+}
+
+.header {
+  grid-area: "header";
+  /* background-color: rgb(250, 184, 174); */
+  padding: 1rem;
+  font-family: 'AcuminPro-Regular', sans-serif;
+  font-size: 4.2rem;
+  margin-left: 5vw;
+
+}
+
+.arrow_back {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+
+
+/* h1 {
     font-family: 'Emberly-Black', sans-serif;
     font-size: 14.4rem;
     margin-top: -5rem;
     margin-bottom: -2rem;
-}
-
-.nav_back {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding-left: .5rem;
-   justify-content: flex-start;
-}
-
-.nav_back_line {
-   margin: 1rem 0rem 1rem 0rem;
-    height: .3rem;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 9%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 100%);
-}
-
-.nav_back_arrow {
-  margin-right: -3rem;
-  /* margin-right: -4.5rem;  dit is voor 565px width */
-}
-
-.nav_back_line {
-  
-}
-
-/* .overflow_menu {
-  width: 100vw;
-  overflow: hidden;
-  margin-bottom: -100vh;
-  z-index: 10;
 } */
 
-/* HAMBURGER */ 
-menu {
-    align-items: center;
-    display: flex;
-    height: 5rem;
-    justify-content: center;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 5rem;
-  }
-.ham {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .hamRotate.active {
-    transform: rotate(45deg);
-  }
-  .hamRotate180.active {
-    transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width:.5rem;
-    stroke-linecap:round;
-  }
-  .ham3 .top {
-    stroke-dasharray: 40 130;
-  }
-  .ham3 .middle {
-    stroke-dasharray: 40 140;
-  }
-  .ham3 .bottom {
-    stroke-dasharray: 40 205;
-  }
-  .ham3.active .top {
-    stroke-dasharray: 75 130;
-    stroke-dashoffset: -63px;
-  }
-  .ham3.active .middle {
-    stroke-dashoffset: -102px;
-  }
-  .ham3.active .bottom {
-    stroke-dasharray: 110 205;
-    stroke-dashoffset: -86px;
-  }
+

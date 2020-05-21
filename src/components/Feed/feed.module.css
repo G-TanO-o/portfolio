@@ -1,0 +1,31 @@
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "top" "content" "foot";
+  }
+
+.nav {
+    grid-area: top;
+    /* background-color: rgb(240, 240, 240); */
+    border-bottom: solid .3rem white;
+}
+
+.content {
+    grid-area: content;
+    border-left: solid .3rem white;
+    margin-left: 3rem;
+
+}
+
+.footer {
+    grid-area: foot;
+    border-top: solid .3rem white;
+    background-color: white;
+    font-size: 3.2rem;
+    font-family: 'AcuminPro-Bold', sans-serif;
+    padding: 1rem;
+    color: black;
+}
+
+

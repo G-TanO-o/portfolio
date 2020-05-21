@@ -1,5 +1,9 @@
 import { createContext } from "react";
+import { configure } from "mobx";
 import DataStore from "../stores/DataStore";
+
+configure({ enforceActions: "observed" });
+
 
 
 const store = {

@@ -1,172 +1,91 @@
 @font-face {
-    font-family: Emberly-Black;
-    src: url(../../assets/fonts/Emberly-Black.woff) format("woff"),
-        url(../../assets/fonts/Emberly-Black.woff2) format("woff2");
-    font-weight: bold;
-    font-style: bold;
-  }
+font-family: AcuminPro-Bold;
 
-p {
-    font-family: 'Montserrat', sans-serif;
-    /* margin: 0; */
-}
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 86vh;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    margin-top: -5rem;
+src: url(../../assets/fonts/Acumin-BdPro.woff) format("woff"), /* Modern Browsers */
+    url(../../assets/fonts/Acumin-BdPro.woff2) format("woff2"); /* Modern Browsers */
+font-weight: normal;
+font-style: normal;
 }
 
-.title {
-    font-family: 'Emberly-Black', sans-serif;
-    /* letter-spacing: .3rem; */
-    text-transform: capitalize;
+@font-face {
+font-family: AcuminPro-Regular;
+
+src: url(../../assets/fonts/Acumin-RPro.woff) format("woff"), /* Modern Browsers */
+    url(../../assets/fonts/Acumin-RPro.woff2) format("woff2"); /* Modern Browsers */
+font-weight: normal;
+font-style: normal;
+}
+
+@media only screen and (min-width: 375px) {
+   
+}
+
+.home_content {
+}
+
+.content {
+    margin: 12rem .01rem .01rem 3rem;
+    color: white;
+    
+}
+
+.hi {
+    font-family: 'AcuminPro-Bold', sans-serif;
+    letter-spacing: -1px;
+    color: white;
+    font-size: 6.4rem;
+    margin-bottom: 2rem;
 }
 
 .name {
-    text-align: end;
-    margin-bottom: 7rem;
-    font-size: 3.4rem;
-    /* -webkit-text-stroke: .05rem white; */
-}
-
-.dad {
-    display: flex;
-    flex-direction: column;
-    font-size: 6.4rem;
-    width: 90vw;
-    text-align:justify;
-    margin-right: -.5rem;
-    
-}
-
-.spatie_dev {
-    letter-spacing: .6rem;
-}
-
-.spatie_animation {
-    letter-spacing: 1.35rem;
-}
-
-.spatie_design {
-    letter-spacing: 3.652rem;
-}
-
-.link_projects {
-    font-family: 'Emberly-Black', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: 3.6rem;
-    padding: .3rem 3rem;
-    border: solid .2rem black;
-    position: absolute;
-    bottom: 5rem;    
-}
-
-.link_projects_arrow {
-    width: .95rem;
-    height: 2.5rem;
-    margin-bottom: -.3rem;
-    margin-left: 1rem;
-}
-
-.side_portfolio {
-    font-family: 'Emberly-Black', sans-serif;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    font-family: 'AcuminPro-bold', sans-serif;
+    letter-spacing: -1px;
     font-size: 2.4rem;
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    margin-bottom: 2rem;
+
 }
 
-/*  ANIMATIONS  */
-
-
-
-.line {
-    width: 34rem;
-    height: .3rem;
-    background-color: black;
-    position: absolute;
-    margin-top: -7.5rem;
-    animation: arrows 1s infinite;
-    animation-iteration-count: infinite;
-     -webkit-animation: line 5s;  /* Chrome, Safari, Opera */
-      -webkit-animation-iteration-count: infinite;  /* Chrome, Safari, Opera */
-  }
-  .line2 {
-    width: 30rem;
-    height: .3rem;
-    background-color: black;
-    position: absolute;
-    margin-top: -13.5rem;
-    animation: arrows 1s infinite;
-    animation-iteration-count: infinite;
-     -webkit-animation: line2 7s;  /* Chrome, Safari, Opera */
-      -webkit-animation-iteration-count: infinite;  /* Chrome, Safari, Opera */
-  }
-  @keyframes line {
-    0% {
-      left: -40%;
-    }
-    50% {
-      left: 80%;
-    }
-    100% {
-        left: -40%;
-      }
-  }
-
-  @keyframes line2 {
-    0% {
-      right: -30%;
-    }
-    50% {
-      right: 85%;
-    }
-    100% {
-        right: -30%;
-      }
-  }
-
-  .blinking{
-    animation: blinkingText 8s infinite;
-    transition-timing-function: linear;
+.text {
+    font-family: 'AcuminPro-Regular', sans-serif;
+    letter-spacing: -1px;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
 }
-@keyframes blinkingText{
-    0%{
-        -webkit-text-stroke: .05rem transparent;
-        color: black;
-    }
-    40%{
-        -webkit-text-stroke: .05rem transparent;
-        color: black;
-    }
 
-    50%{
-        -webkit-text-stroke: .05rem black;
-        color: transparent;
-    }
-    60%{
-        -webkit-text-stroke: .05rem transparent;
-        color: black;
-    }
-    
-    100%{
-        -webkit-text-stroke: .05rem transparent;
-        color: black;
-    }
+.arrow_long {
+    margin-left: -9rem;
 }
 
 
-  /* MARGIN */
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 
-  .marginB03 {
-      margin-bottom: .3rem;
-  }
+.video {
+    overflow: hidden;
+    width: 100vw;
+    height: 90vh;
+}
+
+.blob {
+    top:0;
+    left:0;
+    width:200%; 
+    height:100vh;
+    margin-left: -45vw;
+    transform: rotate(90deg);
+    z-index: -1;
+    position:fixed; 
+    margin-top: -1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .blob {
+        top:0;
+        left:0;
+        transform: rotate(0deg);
+        height:100vh;
+        z-index: -1;
+        position:fixed;
+    }
+}

@@ -12,6 +12,7 @@ class DataStore {
   constructor() {
     this.works = [];
     this.currentProfiel = undefined;
+    this.loading = false;
   }
 
   
@@ -25,18 +26,22 @@ class DataStore {
 
  
   loadData = async () => {
-    // this.setLoading(true);
-    const response = await fetch("./data.json");
+    this.setLoading(true);
+    const response = await fetch("/data.json");
     const jsonData = await response.json();
-
-    // 1 per 1
+    console.log("jresponse", response);
+    console.log("json data", jsonData);
     jsonData.forEach(this.addWork);
 
-    // this.setLoading(false);
+    this.setLoading(false);
   };
 
   addWork = jsonWork => {
     this.works.push(new Work(jsonWork));
+  };
+
+  setLoading = value => {
+    this.loading = value;
   };
 
  
@@ -44,7 +49,12 @@ class DataStore {
 
 decorate(DataStore, {
   works: observable,
-  addWork: action
+  loading: observable,
+
+  addWork: action,
+  seed: action,
+  setLoading: action
+
 });
 
 export default DataStore;

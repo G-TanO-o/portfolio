@@ -48,10 +48,10 @@ const Menu = ({ open, setOpen, ...props }) => {
                     <div className={`${styles.social}`}>
 
                         <div className={`${styles.social_box}`}>
-                            <a href=""><img src={"../assets/img/instagram.png"} alt=""/></a>
-                            <a href=""><img src={"../assets/img/facebook.png"} alt=""/></a>
-                            <a href=""><img src={"../assets/img/twitter.png"} alt=""/></a>
-                            <a href=""><img src={"../assets/img/linkedin.png"} alt=""/></a>
+                            <a href="../"><img src={"../assets/img/instagram.png"} alt=""/></a>
+                            <a href="../"><img src={"../assets/img/facebook.png"} alt=""/></a>
+                            <a href="../"><img src={"../assets/img/twitter.png"} alt=""/></a>
+                            <a href="../"><img src={"../assets/img/linkedin.png"} alt=""/></a>
                         </div>
                     </div>
                 </div>

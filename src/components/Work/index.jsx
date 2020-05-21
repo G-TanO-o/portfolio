@@ -2,9 +2,9 @@ import React from "react"
 import { useObserver } from "mobx-react-lite";
 
 
-import Nav from "../Nav";
+// import Nav from "../Nav";
 import styles from "../Projects/projects.module.css";
-import { useStores } from "../../hooks";
+// import { useStores } from "../../hooks";
 import {ROUTES} from "../../consts";
 import { Link } from "react-router-dom";
 

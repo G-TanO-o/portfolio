@@ -6,7 +6,7 @@ import styles from "../About/about.module.css";
 
 
 import Nav from "../Nav";
-import Rocket from "../Rocket";
+
 import Footer from "../Footer";
 
 

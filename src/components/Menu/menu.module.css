@@ -43,12 +43,6 @@
 
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 li {
     font-family: 'Emberly-Black', sans-serif;
     font-size: 6.4rem;

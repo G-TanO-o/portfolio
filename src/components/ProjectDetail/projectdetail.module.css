@@ -1,21 +1,40 @@
-article {
+.blob {
+    width: 100vw;
+    z-index: -1;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -15rem;
+}
+
+.nav {
+    overflow: hidden;
+
+}
+
+.content_detail {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    overflow: hidden;
+    background-color: white;
 }
-.title {
-    font-family: 'Emberly-Black', sans-serif;
-    font-size: 6.4rem;
-    margin-bottom: 1rem;
+.detail_headet_text {
+    width: 90vw;
+    margin-top: 2rem;
 }
 
+.title {
+    font-family: 'AcuminPro-Regular', sans-serif;
+    font-size: 6.4rem;
+    align-self: flex-start;
+
+}
 .uitleg {
-    text-align: center;
+    align-self: flex-start;
+    margin-left: .8rem;
     font-size: 1.8rem;
     font-weight: 300;
     width: 31rem;
+
 
 }
 .header_img_container {
@@ -39,7 +58,7 @@ article {
 }
 
 .about {
-    font-family: 'Emberly-Black', sans-serif;
+    font-family: 'AcuminPro-Regular', sans-serif;
     font-size: 22.4rem;
     margin-bottom: -7rem;
     margin-top: -4rem;

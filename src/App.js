@@ -1,12 +1,7 @@
 import React from 'react';
-
 import './App.css';
-
-// zorgt ddat als er iets moet aanpassen dit kan gebeuren in de return
-import { useObserver } from 'mobx-react-lite'; 
-
 import {ROUTES} from "./consts";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Feed from './components/Feed';
 import Projects from './components/Projects';

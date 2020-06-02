@@ -39,13 +39,27 @@ const Nav = ({color}) => {
                         <img className={`${styles.arrow_back}`} src={"../assets/img/arrow_back_white.svg"} alt=""/>
                     </NavLink>
                 }
-                
-                        
-                   
-                    
-                    <div className={`${styles.hamburger}`}>
-                        <Hamburger color={color} open={open} setOpen={setOpen} aria-controls={menuId}/>
-                    </div>
+                   <div className={`${styles.nav_pos}`}>
+
+                        <div className={`${styles.hamburger}`}>
+                            <Hamburger color={color} open={open} setOpen={setOpen} aria-controls={menuId}/>
+                        </div>
+
+                        <div className={`${styles.nav_full}`}>
+
+                         <NavLink to={ROUTES.feed} exact activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                            Home
+                        </NavLink>
+                        <NavLink to={ROUTES.projects} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                            Work
+                        </NavLink>
+                        <NavLink to={ROUTES.about} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                            About me
+                        </NavLink>
+                       
+                        </div>
+
+                   </div>
                 </div>
             </nav>
 

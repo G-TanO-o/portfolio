@@ -1,4 +1,5 @@
 import React from "react"
+import { useState, useEffect } from 'react';
 import { useObserver } from "mobx-react-lite";
 
 
@@ -8,9 +9,9 @@ import styles from "../ProjectDetail/projectdetail.module.css";
 
 import { useParams } from "react-router-dom";
 import {useStores} from "../../hooks";
+import { Picture } from "react-responsive-picture";
 // import {ROUTES} from "../../consts";
 // import Footer from "../Footer";
-
 
 
 
@@ -24,9 +25,7 @@ const ProjectDetail = () => {
     
     console.log("dit is het id", id);
     // console.log(work);
-    
-    
-    
+
     return useObserver( () => {
     
     const work = dataStore.selectWorkById(id);
@@ -47,21 +46,51 @@ const ProjectDetail = () => {
             <article className={`${styles.content_detail}`}>
                 <div className={`${styles.detail_headet_text}`}>
                     <h2 className={`${styles.title}`}>{work.title}</h2>
-                    <p className={`${styles.uitleg}`}>{work.uitleg}</p>
+                    <p className={`${styles.uitleg}`}><span className={`${styles.uitleg_quote}`}>"</span>{work.uitleg}<span className={`${styles.uitleg_quote}`}>"</span></p>
                 </div>
                 <div className={`${styles.header_img_container}`}>
-                <img className={`${styles.img_header}`} src={"../assets/img/mac_bodhi.png"} alt=""/>
-                <span className={styles.opvul_img} ></span>
+
+                    <div className={`${styles.header_img_full_width}`}>
+                        <img className={`${styles.header_img_full_width_left}`} src={work.images.preview} alt=""/>
+                        <img className={`${styles.header_img_full_width_mid}`} src={work.images.header} alt=""/>
+                        <img className={`${styles.header_img_full_width_right}`} src={work.images.voorb} alt=""/>
+                    </div>
+                    <p> tezst voor git psuh</p>
+
+                    <Picture className={`${styles.img_header}`}
+                        sources = {[                    
+                            {
+                                srcSet:work.images.header,
+                                media: "(min-width: 599px)",
+                                type: "image/jpg"
+                            },
+                            {
+                                srcSet:work.images.preview,
+                                media: "(min-width: 375px)",
+                                type: "image/jpg"
+                            },
+                        
+                            {
+                                srcSet: "path-to-desktop-image.webp",
+                                type: "image/webp"
+                            }
+                        ]}
+                    />
+                    {/* <img className={`${styles.img_header}`} src={work.images.header} alt=""/> */}
+                    <span className={styles.opvul_img} ></span>
                 </div>
                 {/* <p className={`${styles.about}`}>About</p> */}
                 <div className={`${styles.content_backcolor}`}>
                     <div className={`${styles.content}`}>
-                        <p className={`${styles.intro_vet}`}>
-                        {work.opdracht}</p>
-                        <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
-                        {/* <span className={`${styles.underline}`}> own content </span> */}
-                        <img className={`${styles.img_content}`} src={"../assets/img/iphone_lig.png"} alt=""/>
-                        <p className={`${styles.intro_deel2}`}>{work.workproces}</p>
+                        <div className={`${styles.content_pos}`}>
+                            <div className={`${styles.content_pos_text}`}>
+                                <p className={`${styles.intro_vet}`}>
+                                {work.opdracht}</p>
+                                <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
+                                {/* <span className={`${styles.underline}`}> own content </span> */}
+                            </div>
+                            <img className={`${styles.img_content}`} src={work.images.header} alt=""/>
+                        </div>
                      </div>
                      </div>
                      <img className={`${styles.img_allPics}`} src={"../assets/img/all_screens.png"} alt=""/>

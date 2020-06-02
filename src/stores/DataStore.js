@@ -12,6 +12,8 @@ class DataStore {
   constructor() {
     this.works = [];
     this.currentProfiel = undefined;
+    this.hoverWork = undefined;
+    console.log('datastore, set: check', this.hoverWork);
     this.loading = false;
   }
 
@@ -44,17 +46,21 @@ class DataStore {
     this.loading = value;
   };
 
+  setHoverWork = work => {
+    console.log('datastore, set', work);
+    this.hoverWork = work;
+  };
  
 }
 
 decorate(DataStore, {
   works: observable,
   loading: observable,
-
+  hoverWork: observable, 
   addWork: action,
   seed: action,
-  setLoading: action
-
+  setLoading: action,
+  setHoverWork: action, 
 });
 
 export default DataStore;

@@ -1,14 +1,14 @@
 [
     {
         "id": "6a",
-        "title": "Dilemmas",
+        "title": "Appnormal",
         "uitleg": "The newest React webapp that helps you with all your dilemmas",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
+        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your",
         "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
-            "preview": "../assets/img/test_img.png",
-            "header": "mac_bodhi.png",
-            "voorb": "voorb.png"
+            "preview": "../assets/img/header_imac_left.png",
+            "header": "../assets/img/header_imac_375.png",
+            "voorb": "../assets/img/header_imac_right.png"
         },
         "allPics": ["1.png", "2.png", "3.png"],
         "client": "client",
@@ -20,11 +20,11 @@
         "id": "2a",
         "title": "Dilemmas",
         "uitleg": "A designe and Developed Webapp that helps you with opening your thirt eye",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
-        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing.",
+        "workproces": "workproces hiet komt wat anders. All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
             "preview": "../assets/img/dilemma_test.png",
-            "header": "header.png",
+            "header": "../assets/img/header.png",
             "voorb": "voorb.png"
         },
         "allPics": ["1.png", "2.png", "3.png"],
@@ -41,7 +41,7 @@
         "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
             "preview": "../assets/img/dilemma_test.png",
-            "header": "header.png",
+            "header": "../assets/img/header.png",
             "voorb": "voorb.png"
         },
         "allPics": ["1.png", "2.png", "3.png"],

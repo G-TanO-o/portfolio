@@ -55,7 +55,6 @@ const ProjectDetail = () => {
                         <img className={`${styles.header_img_full_width_mid}`} src={work.images.header} alt=""/>
                         <img className={`${styles.header_img_full_width_right}`} src={work.images.voorb} alt=""/>
                     </div>
-                    <p> tezst voor git psuh</p>
 
                     <Picture className={`${styles.img_header}`}
                         sources = {[                    

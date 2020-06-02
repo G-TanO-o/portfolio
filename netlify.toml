@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/*"
+    from = "api/*"
   to = "/feed"
-  status = 200
-  force = false
+  status = 302
+

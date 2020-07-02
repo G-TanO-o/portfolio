@@ -1,8 +1,11 @@
 .footer {
-    width: 100vw;
-    background-color: black;
-    color: white;
-    padding: 2rem;
+    grid-area: foot;
+    border-top: solid .3rem white;
+    background-color: white;
+    font-size: 3.2rem;
+    font-family: 'AcuminPro-Bold', sans-serif;
+    padding: 1rem;
+    color: black;
 }
 
 .youlike {

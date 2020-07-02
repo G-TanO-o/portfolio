@@ -1,9 +1,9 @@
-import { decorate, observable, action } from "mobx";
-
+import { decorate, observable, action, configure } from "mobx";
+configure({enforceActions: 'observed'});
 
 class UiStore {
   constructor() {
-    this.currentPage = 'feed';
+    this.currentPage = "";
   }
 
   setCurrentPage = page => {

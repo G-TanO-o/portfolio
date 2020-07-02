@@ -14,14 +14,13 @@ import { useStores } from "../../hooks";
 
 
 const Home = () => {
-    const {uiStore} = useStores(); 
-
-    uiStore.setCurrentPage("")
-
     return useObserver( () => 
         <>
             <article className={`${styles.home_content}`}>
-            <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+                {/* <div className={`${styles.video_overflow}`}> */}
+                <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"} width="2000"></video>
+                {/* </div> */}
+            
             <div className={`${styles.content}`}>
                 <h1 className={`${styles.hi}`}>Hi,</h1>
                 <p className={`${styles.name}`}>My name is Gaetan</p>

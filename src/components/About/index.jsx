@@ -18,13 +18,11 @@ const About = () => {
     const {dataStore, uiStore} = useStores();
     console.log('dit is de datastore', dataStore);
 
-    uiStore.setCurrentPage("About")
-
     return useObserver( () => 
         <>
             <Nav/>
-            <article className={`${styles.about}`}>
             <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+            <article className={`${styles.about}`}>
                 <div className={`${styles.content}`}>
                     <h2 className={`${styles.title}`}>Hi,</h2>
                     <p className={`${styles.intro}`}>My name is <span className={`${styles.name_vet}`}>Gaetan Ferhah</span>, I’m a last student at <a href={"https://www.devine.be/"} className={`${styles.devine}`}>Devine <img className={`${styles.vraagteken}`} src={"../assets/img/uitleg.svg"} alt=""/></a>, Howest KASK.</p>
@@ -79,7 +77,7 @@ const About = () => {
                     INTERSTELLAR</p>
                 </div>
             </article>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
     

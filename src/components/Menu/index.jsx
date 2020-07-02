@@ -24,10 +24,14 @@ const Menu = ({ open, setOpen, ...props }) => {
 
         
             <div className={`${styles.menu} ${open === true ? "open" : "closed"}`}>
+            <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+
+                <div className={`${styles.menu_pos}`}>
                 <div className={`${styles.menu_click}`}>
-                    <h1 className={`${styles.title}`}>Menu</h1>
-                    <span onClick={e => onClickClose()}>X</span>
+                    {/* <h1 className={`${styles.title}`}>Menu</h1> */}
+                    <p className={`${styles.close}`} onClick={e => onClickClose()}>X <span className={`${styles.close_back}`}>X</span></p>
                 </div>
+
                 <div className={`${styles.wrap}`}>
                     <nav className={`${styles.nav_menu}`}>
                         <ul>
@@ -45,16 +49,9 @@ const Menu = ({ open, setOpen, ...props }) => {
                             </Link>
                         </ul>
                     </nav>
-                    <div className={`${styles.social}`}>
-
-                        <div className={`${styles.social_box}`}>
-                            <a href="../"><img src={"../assets/img/instagram.png"} alt=""/></a>
-                            <a href="../"><img src={"../assets/img/facebook.png"} alt=""/></a>
-                            <a href="../"><img src={"../assets/img/twitter.png"} alt=""/></a>
-                            <a href="../"><img src={"../assets/img/linkedin.png"} alt=""/></a>
-                        </div>
-                    </div>
                 </div>
+                </div>
+                
             </div>
            
         </>

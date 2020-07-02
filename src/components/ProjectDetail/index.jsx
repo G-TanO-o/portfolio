@@ -51,20 +51,20 @@ const ProjectDetail = () => {
                 <div className={`${styles.header_img_container}`}>
 
                     <div className={`${styles.header_img_full_width}`}>
-                        <img className={`${styles.header_img_full_width_left}`} src={work.images.preview} alt=""/>
-                        <img className={`${styles.header_img_full_width_mid}`} src={work.images.header} alt=""/>
-                        <img className={`${styles.header_img_full_width_right}`} src={work.images.voorb} alt=""/>
+                        <img className={`${styles.header_img_full_width_left}`} src={work.images.headerL} alt=""/>
+                        <img className={`${styles.header_img_full_width_mid}`} src={work.images.headerM} alt=""/>
+                        <img className={`${styles.header_img_full_width_right}`} src={work.images.headerR} alt=""/>
                     </div>
 
                     <Picture className={`${styles.img_header}`}
                         sources = {[                    
                             {
-                                srcSet:work.images.header,
+                                srcSet:work.images.headerM,
                                 media: "(min-width: 599px)",
                                 type: "image/jpg"
                             },
                             {
-                                srcSet:work.images.preview,
+                                srcSet:work.images.headerM,
                                 media: "(min-width: 375px)",
                                 type: "image/jpg"
                             },
@@ -88,33 +88,35 @@ const ProjectDetail = () => {
                                 <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
                                 {/* <span className={`${styles.underline}`}> own content </span> */}
                             </div>
-                            <img className={`${styles.img_content}`} src={work.images.header} alt=""/>
+                            <img className={`${styles.img_content}`} src={work.images.headerM} alt=""/>
                         </div>
                      </div>
-                     </div>
-                     <img className={`${styles.img_allPics}`} src={"../assets/img/all_screens.png"} alt=""/>
-                     <span className={`${styles.line}`}></span>
-                     <section className={`${styles.info}`}>
-                        <div className={`${styles.info_section}`}>
-                            <p className={`${styles.info_title}`}>Client</p>
-                            <p className={`${styles.info_text}`}>{work.client}</p>
-                        </div>
-                        <div className={`${styles.info_section}`}>
-                            <p className={`${styles.info_title}`}>Team</p>
-                            <p className={`${styles.info_text}`}>{work.team}</p>
-                        </div>
-                        <div className={`${styles.info_section}`}>
-                            <p className={`${styles.info_title}`}>Year</p>
-                            <p className={`${styles.info_text}`}>{work.year}</p>
-                        </div>
-                        <div className={`${styles.info_section}`}>
-                            <p className={`${styles.info_title}`}>Tools</p>
-                            {work.tools.map(tool => (
-                            <p className={`${styles.info_text}`} key={tool}>{tool}</p>
-                            ))}
-                           
-                        </div>
-                    </section>
+                </div>
+                    {/* {work.allScreens.map(screen => (
+                        <img className={`${styles.img}`} src={screen} alt={screen}/>
+                      */}
+                    <span className={`${styles.line}`}></span>
+                    <section className={`${styles.info}`}>
+                    <div className={`${styles.info_section}`}>
+                        <p className={`${styles.info_title}`}>Client</p>
+                        <p className={`${styles.info_text}`}>{work.client}</p>
+                    </div>
+                    <div className={`${styles.info_section}`}>
+                        <p className={`${styles.info_title}`}>Team</p>
+                        <p className={`${styles.info_text}`}>{work.team}</p>
+                    </div>
+                    <div className={`${styles.info_section}`}>
+                        <p className={`${styles.info_title}`}>Year</p>
+                        <p className={`${styles.info_text}`}>{work.year}</p>
+                    </div>
+                    <div className={`${styles.info_section}`}>
+                        <p className={`${styles.info_title}`}>Tools</p>
+                        {work.tools.map(tool => (
+                        <p className={`${styles.info_text}`} key={tool}>{tool}</p>
+                        ))}
+                        
+                    </div>
+                </section>
                 
             </article>
         ) : (

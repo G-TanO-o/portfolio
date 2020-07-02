@@ -34,39 +34,54 @@
     width: 60vw;
     height: 80vh;
     display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
-
-
-.content_prev_tex_img {
+.test {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 60vw;
+    height: 53rem;
+}
+
+.text {
+    padding: 2rem;
+    width: 45rem;
 }
 
 .preview_title {
     font-size: 3.6rem;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin: 3rem .01rem;
+    font-weight: bold;
 }
 
-.preview_img {
-    margin-top: 2rem;
-    margin-bottom: -2rem;
-}
-
-.content_prev_tex {
+.intro {
     font-size: 2.4rem;
-    margin-top: 4rem;
-    padding: 2rem;
-    max-width: 35vw;
-    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.uitleg {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+
+.img {
+    height: 60rem;
+    margin-right: -25rem;
 }
 
 .arrow_to {
     transform: rotate(180deg);
+    margin-bottom: 2rem;
 }
-  
+
+
+
+
 .corner {
     grid-area: side;
     background-color: white;
@@ -78,17 +93,17 @@
 .blob {
     grid-area: content; 
     transform: rotate(-90deg) scale(2);
-    width: 90vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     position:fixed;
-
 }
 
 .ul_list {
     padding: 4rem;
     text-align: left;
     width: 35vw;
+    max-width: 46rem;
 }
 
 .li_link {
@@ -100,11 +115,13 @@
     font-size: 3.2rem;
     text-transform: uppercase;
     color: white;
-}
+    width: auto;
+    text-align: left;}
 
 .li_list:hover {
 
-    color: rgb(172, 97, 97);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -113,6 +130,19 @@
     .content_hover {
        
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blob {
+        grid-area: content; 
+        transform: rotate(-90deg) scale(2);
+        width: 90vw;
+        height: 80vh;
+        z-index: -1;
+        position:fixed;
+        margin-left: -35rem;
     }
   
   }

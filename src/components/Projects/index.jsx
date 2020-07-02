@@ -7,8 +7,6 @@ import Nav from "../Nav";
 import styles from "../Projects/projects.module.css";
 import { useStores } from "../../hooks";
 
-import WorkComponent from "../Work"
-import Hamburger from "../Hamburger";
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../consts';
 // import Menu from "../Menu";
@@ -20,10 +18,6 @@ const Projects = ({color}) => {
     const {uiStore} = useStores(); 
 
     // const menuId = "main-menu";
-
-    uiStore.setCurrentPage("work");
-
-      
         
     return useObserver( () => {
 
@@ -70,29 +64,34 @@ const Projects = ({color}) => {
 
 {(hoverWork !== undefined) ? 
                 <div className={`${styles.content_hover}`}>
+                <div className={`${styles.test}`}>
+                    <div className={`${styles.text}`}>
+                        <p className={`${styles.preview_title}`}>{hoverWork.title}</p>
+                        <p className={`${styles.intro}`}>{hoverWork.uitleg}</p>
+                        <p className={`${styles.uitleg}`}>{hoverWork.opdracht}</p>
+                    </div>
 
-                <p className={`${styles.preview_title}`}>{hoverWork.title}</p>
-                <div className={`${styles.content_prev_tex_img}`}>
-                    <p className={`${styles.content_prev_tex}`}>{hoverWork.uitleg}</p>
-                    <img className={`${styles.preview_img}`} src={`${hoverWork.images.preview}`} alt=""/>
+                    <img className={`${styles.img}`} src={`${hoverWork.images.headerM}`} alt=""/>
+
+
                 </div>
-
+                
                 <NavLink to={`${ROUTES.projectDetail.to}${hoverWork.id}`}>
                     <img className={`${styles.arrow_to}`} src={"../assets/img/back_arrow.svg"} alt=""/>
                 </NavLink>
                 </div>
 
 :  <div className={`${styles.content_hover}`}>
+<div className={`${styles.test}`}>
+                    <div className={`${styles.text}`}>
+                        <p className={`${styles.preview_title}`}>Hover on a project</p>
+                        <p className={`${styles.intro}`}>Then you will see some info</p>
+                    </div>
 
-<p className={`${styles.preview_title}`}>Title</p>
-<div className={`${styles.content_prev_tex_img}`}>
-    <p className={`${styles.content_prev_tex}`}>All of this text is editable. Simply click anywhere in the paragraph or heading. All of this text is editable. Simply click anywhere in the paragraph or heading</p>
-    <img className={`${styles.preview_img}`} src={"../assets/img/appnormal_mac.png"} alt=""/>
-</div>
+                    
 
-<NavLink to={ROUTES.projectDetail.to}>
-    <img className={`${styles.arrow_to}`} src={"../assets/img/back_arrow.svg"} alt=""/>
-</NavLink>
+                </div>
+
 </div>}
 
                        

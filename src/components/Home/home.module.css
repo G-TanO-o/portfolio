@@ -60,32 +60,63 @@ font-style: normal;
 p {
     font-family: 'Montserrat', sans-serif;
 }
-
+/* 
 .video {
     overflow: hidden;
     width: 100vw;
     height: 90vh;
+} */
+
+/* .video_overflow {
+    overflow: hidden;
+    height: 100vh;
+    position:fixed; 
+    
 }
 
 .blob {
-    top:0;
-    left:0;
-    width:200%; 
-    height:100vh;
-    margin-left: -45vw;
+    height:100%;
+    z-index: -1;
+} */
+
+.blob {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    /* margin-left: -45vw; */
     transform: rotate(90deg);
     z-index: -1;
-    position:fixed; 
-    margin-top: -1rem;
+    position: fixed;
 }
+
+/* .blob {
+    position: absolute;
+    z-index: 0;
+    background: url(mel.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    top: 0px;
+    left: 0px; 
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+} */
+
+video {
+    width: 100%;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     .blob {
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         transform: rotate(0deg);
-        height:100vh;
+        /* height: 100vh; */
         z-index: -1;
-        position:fixed;
+        position: absolute;
     }
 }

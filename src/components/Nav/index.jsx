@@ -32,12 +32,12 @@ const Nav = ({color}) => {
                 </div>
                 <div className={`${styles.nav_click} ${styles.grid_container}`}>
                
-                {(currentPage !== "ProjectDetail") ? 
-                    <h1 className={`${styles.header}`}>{uiStore.currentPage}</h1>
-                    :
+                {(currentPage === "ProjectDetail") ? 
                     <NavLink to={ROUTES.projects}>
                         <img className={`${styles.arrow_back}`} src={"../assets/img/arrow_back_white.svg"} alt=""/>
                     </NavLink>
+                    :
+                    <h1 className={`${styles.header}`}>{uiStore.currentPage}</h1>
                 }
                    <div className={`${styles.nav_pos}`}>
 
@@ -47,13 +47,19 @@ const Nav = ({color}) => {
 
                         <div className={`${styles.nav_full}`}>
 
-                         <NavLink to={ROUTES.feed} exact activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                         <NavLink to={ROUTES.feed} exact activeClassName={`${styles.active}`} className={`${styles.nav_title}`}
+                         onClick={() => uiStore.setCurrentPage("")}
+                         >
                             Home
                         </NavLink>
-                        <NavLink to={ROUTES.projects} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                        <NavLink to={ROUTES.projects} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}
+                        onClick={() => uiStore.setCurrentPage("Work")}
+                        >
                             Work
                         </NavLink>
-                        <NavLink to={ROUTES.about} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}>
+                        <NavLink to={ROUTES.about} activeClassName={`${styles.active}`}  className={`${styles.nav_title}`}
+                         onClick={() => uiStore.setCurrentPage("About")}
+                        >
                             About me
                         </NavLink>
                        

@@ -1,8 +1,4 @@
 import {observable, action, decorate, configure} from 'mobx';
-// import Dilemma from '../models/Dilemma';
-// import Profiel from '../models/Profiel';
-// import { v4 as uuidv4 } from 'uuid';
-
 import Work from '../models/Work';
 
 configure({enforceActions: 'observed'}); // plaats je best in de index.js of store.js ; wanneer je meerdere store.js hebt moet je in index.js zetten

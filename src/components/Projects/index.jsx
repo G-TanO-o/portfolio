@@ -48,11 +48,6 @@ const Projects = () => {
                    
                     ))}
                 </ul>
-
-                
-
-
-
 {(hoverWork !== undefined) ? 
                 <div className={`${styles.content_hover}`}>
                 <div className={`${styles.test}`}>

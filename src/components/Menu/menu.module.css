@@ -1,11 +1,15 @@
 .blob {
     grid-area: content; 
     transform: rotate(-90deg) scale(2);
-    width: 100vw;
-    height: 100vh;
+    height: 120rem;
     z-index: -1;
     position:fixed;
 }
+
+   
+  
+    
+
 
 .menu_click {
     display: flex;
@@ -116,3 +120,4 @@ li {
     justify-content: space-between;
 
 }
+

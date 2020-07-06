@@ -18,19 +18,24 @@ const Home = () => {
         <>
             <article className={`${styles.home_content}`}>
                 {/* <div className={`${styles.video_overflow}`}> */}
-                <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"} width="2000"></video>
                 {/* </div> */}
             
             <div className={`${styles.content}`}>
-                <h1 className={`${styles.hi}`}>Hi,</h1>
-                <p className={`${styles.name}`}>My name is Gaetan</p>
-                <p className={`${styles.text}`}>I’m a Deviner<br></br>
-                    Go ahead and look<br></br> wath I have made
+                {/* <h1 className={`${styles.name}`}>Gaetan Ferhah</h1> */}
+                <div className={`${styles.content_hi}`}>
+                    <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"} width="2000"></video>
+                </div>
+                <div className={`${styles.text_wrap}`}>
+                <p className={`${styles.gaetan}`}>Gaetan</p>
+                <p className={`${styles.text}`}>I’m a Deviner
+                    Go ahead and look wath I have made
                 </p>
+                <p className={`${styles.ferhah}`}>Ferhah</p>
 
                 <NavLink to={ROUTES.projects}>
-                    <img className={`${styles.arrow_long}`} src={"../assets/img/arrow_long.png"} alt=""/>
+                    <img className={`${styles.arrow}`} src={"/assets/img/arrow_long.png"} alt=""/>
                 </NavLink>
+                </div>
 
             </div>
                

@@ -1,122 +1,311 @@
 @font-face {
-font-family: AcuminPro-Bold;
-
-src: url(../../assets/fonts/Acumin-BdPro.woff) format("woff"), /* Modern Browsers */
-    url(../../assets/fonts/Acumin-BdPro.woff2) format("woff2"); /* Modern Browsers */
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-font-family: AcuminPro-Regular;
-
-src: url(../../assets/fonts/Acumin-RPro.woff) format("woff"), /* Modern Browsers */
-    url(../../assets/fonts/Acumin-RPro.woff2) format("woff2"); /* Modern Browsers */
-font-weight: normal;
-font-style: normal;
-}
-
-@media only screen and (min-width: 375px) {
-   
-}
-
-.home_content {
-}
-
-.content {
-    margin: 12rem .01rem .01rem 3rem;
-    color: white;
+    font-family: AcuminPro-Bold;
     
-}
-
-.hi {
-    font-family: 'AcuminPro-Bold', sans-serif;
-    letter-spacing: -1px;
-    color: white;
-    font-size: 6.4rem;
-    margin-bottom: 2rem;
-}
-
-.name {
-    font-family: 'AcuminPro-bold', sans-serif;
-    letter-spacing: -1px;
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-
-}
-
-.text {
-    font-family: 'AcuminPro-Regular', sans-serif;
-    letter-spacing: -1px;
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-}
-
-.arrow_long {
-    margin-left: -9rem;
-}
-
-
-p {
-    font-family: 'Montserrat', sans-serif;
-}
-/* 
-.video {
-    overflow: hidden;
-    width: 100vw;
-    height: 90vh;
-} */
-
-/* .video_overflow {
-    overflow: hidden;
-    height: 100vh;
-    position:fixed; 
+    src: url(../../assets/fonts/Acumin-BdPro.woff) format("woff"), /* Modern Browsers */
+        url(../../assets/fonts/Acumin-BdPro.woff2) format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+    }
     
-}
+    @font-face {
+    font-family: AcuminPro-Regular;
+    
+    src: url(../../assets/fonts/Acumin-RPro.woff) format("woff"), /* Modern Browsers */
+        url(../../assets/fonts/Acumin-RPro.woff2) format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+    }
+    @media only screen and (min-width: 325px) {
+        .home_content {
+            /* background-color: red; */
+            height: 90vh;
+            overflow: hidden;
+        }
+       
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 140rem;
+            position: fixed;
+        }
+    .text_wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem 1rem 1rem;
+        max-width: 32.5rem;
 
-.blob {
-    height:100%;
-    z-index: -1;
-} */
+    }
+    .gaetan {
+        font-family: 'AcuminPro-Bold', sans-serif;
+        letter-spacing: 1px;
+        -webkit-text-stroke: .14rem white;
+        color: transparent;
+        font-size: 9rem;
+    }
 
-.blob {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    /* margin-left: -45vw; */
-    transform: rotate(90deg);
-    z-index: -1;
-    position: fixed;
-}
-
-/* .blob {
-    position: absolute;
-    z-index: 0;
-    background: url(mel.jpg) no-repeat;
-    background-size: 100vw 100vh;
-    top: 0px;
-    left: 0px; 
-    min-width: 100vw;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
-    z-index: -1;
-} */
-
-video {
-    width: 100%;
-}
+    .text {
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
 
 
+    .ferhah {
+        font-family: 'AcuminPro-Bold', sans-serif;
+        letter-spacing: 3px;
+        -webkit-text-stroke: .14rem white;
+        color: transparent;
+        font-size: 9rem;
 
-@media only screen and (min-width: 600px) {
-    .blob {
-        top: 0;
-        left: 0;
-        transform: rotate(0deg);
-        /* height: 100vh; */
-        z-index: -1;
-        position: absolute;
+    }
+
+    .arrow {
+        position: fixed;
+        bottom: 7%;
+        right: 2%;
+        width: 90vw;
     }
 }
+    
+    @media only screen and (min-width: 375px) {
+
+        .home_content {
+            /* background-color: red; */
+            height: 90vh;
+            overflow: hidden;
+        }
+       
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 140rem;
+            position: fixed;
+        }
+    
+        .content {
+            color: black;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        
+        .text_wrap {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 1rem 1rem 1rem;
+            max-width: 37.5rem;
+
+        }
+        .gaetan {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 1px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 10rem;
+        }
+
+        .text {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+
+        .ferhah {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 3px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 10rem;
+
+        }
+
+        
+        .arrow {
+            position: fixed;
+            bottom: 7%;
+            right: 2%;
+            width: 90vw;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 150rem;
+            position: fixed;
+        }
+
+        .text_wrap {
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+            max-width: 60rem;
+        }
+        .gaetan {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 1px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 17rem;
+        }
+
+        .text {
+            color: white;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+
+        .ferhah {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 3px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 17rem;
+
+        }
+
+        .arrow {
+            position: fixed;
+            bottom: 3%;
+            right: 2%;
+            width: 40rem;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 180rem;
+            position: fixed;
+        }
+
+        .text_wrap {
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+            max-width: 90rem;
+        }
+        .gaetan {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 1px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 25rem;
+            margin-bottom: -3rem;
+        }
+
+        .text {
+            color: white;
+            font-size: 5.5rem;
+        }
+
+
+        .ferhah {
+            font-family: 'AcuminPro-Bold', sans-serif;
+            letter-spacing: 3px;
+            -webkit-text-stroke: .14rem white;
+            color: transparent;
+            font-size: 25rem;
+
+        }
+
+        
+        
+
+        .content {
+            padding-left: 5rem;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 220rem;
+            position: fixed;
+        }
+    }
+
+    @media only screen and (min-width: 1500px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 250rem;
+            position: fixed;
+        }
+    }
+
+    @media only screen and (min-width: 1600px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 300rem;
+            position: fixed;
+        }
+    }
+
+    @media only screen and (min-width: 1900px) {
+        .blob {
+            /* bottom: 0%;
+            left: 0%; */
+            /* height: 60rem; */
+            /* margin-left: -60rem; */
+            margin-left: -45vw;
+            z-index: -1;
+            /* position: fixed; */
+            width: 400rem;
+            position: fixed;
+        }
+    }
+    
+    
+    p {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    
+    
+    
+    

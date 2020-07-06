@@ -21,7 +21,7 @@ const Feed = () => {
         <div className={`${styles.grid_container}`}>
             
             <div className={`${styles.nav}`}>
-            <Nav color="white"/>
+            <Nav color="black"/>
             </div>
   
             
@@ -29,9 +29,7 @@ const Feed = () => {
             <div className={`${styles.content}`}> 
                 <Home/>
             </div>
-            <div className={`${styles.footer}`}> 
-                <h1>Contact</h1>
-            </div>
+            {/* <Footer /> */}
                 
         </div>
         </>

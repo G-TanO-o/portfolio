@@ -1,7 +1,7 @@
 .grid_container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 90vh;
     grid-template-areas: "top" "content" "foot";
   }
 
@@ -13,8 +13,8 @@
 
 .content {
     grid-area: content;
-    border-left: solid .3rem white;
-    margin-left: 3rem;
+    /* border-left: solid .3rem white; */
+    /* margin-left: 3rem; */
 
 }
 

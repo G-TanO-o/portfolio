@@ -1,28 +1,9 @@
 [
-    {
-        "id": "1",
-        "title": "Appnormal",
-        "uitleg": "The newest React webapp that helps you with all your dilemmas",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your",
-        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
-        "images": {
-            "preview": "../assets/img/header_imac_left.png",
-            "header": "../assets/img/header_imac_375.png",
-            "headerL": "../assets/img/projects/tinnepot/header_left.png",
-            "headerM": "../assets/img/projects/tinnepot/header_mid.png",
-            "headerR": "../assets/img/projects/tinnepot/header_right.png",
-            "voorb": "../assets/img/header_imac_right.png"
-        },
-        "allPics": ["1.png", "2.png", "3.png"],
-        "client": "client",
-        "team": "team",
-        "year": 2020,
-        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
-    },
+    
     {
         "id": "2",
         "title": "Dilemmas",
-        "uitleg": "A designe and Developed Webapp that helps you with opening your thirt eye",
+        "uitleg": "A new Webapp that helps you all your dilemmas. Ask and get ask",
         "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing.",
         "workproces": "workproces hiet komt wat anders. All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
@@ -31,7 +12,17 @@
             "headerL": "../assets/img/projects/dilemma/iphone2.png",
             "headerR": "../assets/img/projects/dilemma/iphone3.png",            "voorb": "voorb.png"
         },
-        "allPics": ["m1.png", "m2.png", "m3.png","m4.png", "m5.png", "m6.png"],
+        "screensM": [
+            "dilemma/m1.png", 
+            "dilemma/m2.png", 
+            "dilemma/m3.png",
+            "dilemma/m4.png", 
+            "dilemma/m5.png",
+            "dilemma/m6.png"
+        ],
+        "screensD": [
+            ""
+        ],
         "client": "client",
         "team": "team",
         "year": 2020,
@@ -40,17 +31,28 @@
     {
         "id": "3b",
         "title": "Humo",
-        "uitleg": "The newest React webapp that helps you with all your dilemmas",
+        "uitleg": "A webshop for humo with every week a new book",
         "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
         "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
             "preview": "../assets/img/dilemma_test.png",
-            "headerL": "../assets/img/projects/tinnepot/header_left.png",
-            "headerM": "../assets/img/projects/tinnepot/header_mid.png",
-            "headerR": "../assets/img/projects/tinnepot/header_right.png",
+            "headerL": "../assets/img/projects/humo/desk_left.png",
+            "headerM": "../assets/img/projects/humo/desk_mid.png",
+            "headerR": "../assets/img/projects/humo/desk_right.png",
             "voorb": "voorb.png"
         },
-        "allPics": ["1.png", "2.png", "3.png"],
+        "screensM": [
+            "humo/m1.png", 
+            "humo/m2.png", 
+            "humo/m6.png",
+            "humo/m4.png", 
+            "humo/m5.png"
+        ],
+        "screensD": [
+            "humo/d1.png", 
+            "humo/d2.png", 
+            "humo/d4.png"
+        ],
         "client": "client",
         "team": "team",
         "year": 2020,
@@ -69,7 +71,18 @@
             "headerR": "../assets/img/projects/tinnepot/desk_right.png",
             "voorb": "../assets/img/header_imac_right.png"
         },
-        "allScreens": ["m1.png", "m2.png", "m3.png","d1.png", "d2.png", "d3.png"],
+        "screensM": [
+            "tinnepot/m1.png", 
+            "tinnepot/m2.png", 
+            "tinnepot/m3.png",
+            "tinnepot/m4.png", 
+            "tinnepot/m5.png"
+        ],
+        "screensD": [
+            "tinnepot/d1.png", 
+            "tinnepot/d2.png", 
+            "tinnepot/d3.png"
+        ],
         "client": "client",
         "team": "team",
         "year": 2020,

@@ -10,6 +10,7 @@ import styles from "../ProjectDetail/projectdetail.module.css";
 import { useParams } from "react-router-dom";
 import {useStores} from "../../hooks";
 import { Picture } from "react-responsive-picture";
+import Footer from "../Footer";
 // import {ROUTES} from "../../consts";
 // import Footer from "../Footer";
 
@@ -82,13 +83,32 @@ const ProjectDetail = () => {
                 <div className={`${styles.content_backcolor}`}>
                     <div className={`${styles.content}`}>
                         <div className={`${styles.content_pos}`}>
-                            <div className={`${styles.content_pos_text}`}>
-                                <p className={`${styles.intro_vet}`}>
-                                {work.opdracht}</p>
-                                <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
-                                {/* <span className={`${styles.underline}`}> own content </span> */}
+                            <div className={`${styles.content_color}`}>
+                                <div className={`${styles.content_pos_text}`}>
+                                    <p className={`${styles.intro_vet}`}>
+                                    {work.opdracht}</p>
+                                    <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
+                                    {/* <span className={`${styles.underline}`}> own content </span> */}
+                                </div>
+                                {/* <img className={`${styles.img_content}`} src={work.images.headerM} alt=""/> */}
                             </div>
-                            <img className={`${styles.img_content}`} src={work.images.headerM} alt=""/>
+                        </div>
+                        <div className={`${styles.all_img}`}>
+                            <p className={`${styles.screen_title}`}>Some more screens</p>
+                            <div className={`${styles.screen}`}>
+                                {work.screensM.map(screen => (
+                                    <img className={styles.img_list} src={`/assets/img/projects/${screen}`} alt="" key={screen}></img>
+                                ))}
+                            </div>
+                           {work.screensD.length > 1 ? 
+                            <div className={`${styles.screen}`}>
+                            {work.screensD.map(screen => (
+                            <img className={styles.img_list} src={`/assets/img/projects/${screen}`} alt="" key={screen}></img>
+                        ))}
+                            </div>
+                            : <div></div>
+                        }
+                        
                         </div>
                      </div>
                 </div>
@@ -96,7 +116,7 @@ const ProjectDetail = () => {
                         <img className={`${styles.img}`} src={screen} alt={screen}/>
                       */}
                     <span className={`${styles.line}`}></span>
-                    <section className={`${styles.info}`}>
+                <section className={`${styles.info}`}>
                     <div className={`${styles.info_section}`}>
                         <p className={`${styles.info_title}`}>Client</p>
                         <p className={`${styles.info_text}`}>{work.client}</p>
@@ -117,8 +137,9 @@ const ProjectDetail = () => {
                         
                     </div>
                 </section>
-                
+                <Footer />
             </article>
+            
         ) : (
             <p className="songs__status">No project found</p>
             )}

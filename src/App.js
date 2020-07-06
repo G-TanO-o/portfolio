@@ -10,8 +10,6 @@ import Contact from './components/Contact';
 import ProjectDetail from './components/ProjectDetail';
 import Menu from './components/Menu';
 
-
-
 function App() {
   return (
     <>

@@ -5,10 +5,7 @@ import styles from "../Menu/menu.module.css";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../consts";
 
-
-
-
-const Menu = ({ open, setOpen, ...props }) => {
+const Menu = ({ open, setOpen }) => {
 
     console.log(open);
     

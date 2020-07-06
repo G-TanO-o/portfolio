@@ -2,11 +2,8 @@
 import React, { useState } from 'react';
 
 import { useObserver } from "mobx-react-lite";
-
 import styles from "../Nav/nav.module.css";
 import Menu from "../Menu";
-// import { Link } from "react-router-dom";
-// import { ROUTES } from "../../consts";
 import Hamburger from "../Hamburger";
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../consts';
@@ -21,8 +18,6 @@ const Nav = ({color}) => {
     const { uiStore } = useStores();
 
     const currentPage = uiStore.currentPage;
-
-
 
     return useObserver( () => 
         <>
@@ -68,11 +63,6 @@ const Nav = ({color}) => {
                    </div>
                 </div>
             </nav>
-
-            {/* <div className={`${styles.nav_back}`}>
-               <img className={`${styles.nav_back_arrow}`} src={"../assets/img/arrow_back.svg"} alt=""/>
-               <img className={`${styles.nav_back_line}`} src={"../assets/img/line_back.svg"} alt=""/>
-           </div> */}
         </>
     )
     

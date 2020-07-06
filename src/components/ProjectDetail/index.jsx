@@ -1,20 +1,11 @@
 import React from "react"
-import { useState, useEffect } from 'react';
 import { useObserver } from "mobx-react-lite";
-
-
 import Nav from "../Nav";
 import styles from "../ProjectDetail/projectdetail.module.css";
-
-
 import { useParams } from "react-router-dom";
 import {useStores} from "../../hooks";
 import { Picture } from "react-responsive-picture";
 import Footer from "../Footer";
-// import {ROUTES} from "../../consts";
-// import Footer from "../Footer";
-
-
 
 const ProjectDetail = () => {
 

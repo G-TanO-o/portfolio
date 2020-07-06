@@ -3,8 +3,6 @@ import { useObserver } from "mobx-react-lite";
 
 import { bool, func } from 'prop-types';
 
-
-
 const Hamburger = ({ color, open, setOpen, ...props }) => {
 
     const isExpanded = open ? true : false;

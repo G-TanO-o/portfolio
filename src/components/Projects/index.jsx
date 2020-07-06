@@ -1,23 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useObserver } from "mobx-react-lite";
-
-
 import Nav from "../Nav";
-
 import styles from "../Projects/projects.module.css";
 import { useStores } from "../../hooks";
-
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../consts';
-// import Menu from "../Menu";
-// import Contact from "../Contact";
 
 
-const Projects = ({color}) => {
+
+const Projects = () => {
     const store = useStores(); 
-    const {uiStore} = useStores(); 
-
-    // const menuId = "main-menu";
         
     return useObserver( () => {
 
@@ -60,7 +52,6 @@ const Projects = ({color}) => {
                 
 
 
-{console.log(hoverWork)};
 
 {(hoverWork !== undefined) ? 
                 <div className={`${styles.content_hover}`}>
@@ -102,7 +93,6 @@ const Projects = ({color}) => {
                 <h1>foot</h1>
             </div>
 
-            {/* <Contact/> */}
         </div>
             
            

@@ -1,17 +1,8 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
-
-
-import { Link } from "react-router-dom";
-
 import { NavLink} from "react-router-dom";
-
 import {ROUTES} from "../../consts";
-
 import styles from "../Home/home.module.css";
-import { useStores } from "../../hooks";
-
-
 
 const Home = () => {
     return useObserver( () => 

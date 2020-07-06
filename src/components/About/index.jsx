@@ -1,23 +1,11 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
-
 import styles from "../About/about.module.css";
 
-
-
 import Nav from "../Nav";
-
 import Footer from "../Footer";
-import { useParams } from "react-router-dom";
-import { useStores } from "../../hooks";
-
 
 const About = () => {
-
-    const { id } = useParams();    
-    const {dataStore, uiStore} = useStores();
-    console.log('dit is de datastore', dataStore);
-
     return useObserver( () => 
         <>
             <Nav/>
@@ -77,7 +65,7 @@ const About = () => {
                     INTERSTELLAR</p>
                 </div>
             </article>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
     

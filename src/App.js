@@ -6,7 +6,6 @@ import { Switch, Route } from "react-router-dom";
 import Feed from './components/Feed';
 import Projects from './components/Projects';
 import About from './components/About';
-import Contact from './components/Contact';
 import ProjectDetail from './components/ProjectDetail';
 import Menu from './components/Menu';
 
@@ -16,9 +15,6 @@ function App() {
       <Switch>
           <Route path={ROUTES.projectDetail.path}>
             <ProjectDetail />
-          </Route>
-          <Route path={ROUTES.contact}>
-            <Contact />
           </Route>
           <Route path={ROUTES.about}>
             <About />

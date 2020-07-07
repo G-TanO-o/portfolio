@@ -1,7 +1,10 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
+
 import { NavLink} from "react-router-dom";
+
 import {ROUTES} from "../../consts";
+
 import styles from "../Home/home.module.css";
 
 const Home = () => {
@@ -13,8 +16,8 @@ const Home = () => {
             
             <div className={`${styles.content}`}>
                 {/* <h1 className={`${styles.name}`}>Gaetan Ferhah</h1> */}
-                <div className={`${styles.content_hi}`}>
-                    <video className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"} width="2000"></video>
+                <div>
+                    <video className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"} width="2000"></video>
                 </div>
                 <div className={`${styles.text_wrap}`}>
                 <p className={`${styles.gaetan}`}>Gaetan</p>

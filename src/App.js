@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {ROUTES} from "./consts";
 import { Switch, Route } from "react-router-dom";
-
+import 'mobx-react-lite/batchingForReactDom'
 import Feed from './components/Feed';
 import Projects from './components/Projects';
 import About from './components/About';

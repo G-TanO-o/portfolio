@@ -21,6 +21,9 @@
     "test": "./node_modules/.bin/react-scripts test",
     "eject": "./node_modules/.bin/react-scripts eject"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },

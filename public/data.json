@@ -6,10 +6,10 @@
         "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing.",
         "workproces": "workproces hiet komt wat anders. All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
-            "preview": "../assets/img/dilemma_test.png",
-            "headerM": "../assets/img/projects/dilemma/iphone1.png",
-            "headerL": "../assets/img/projects/dilemma/iphone2.png",
-            "headerR": "../assets/img/projects/dilemma/iphone3.png",            
+            "preview": "/assets/img/dilemma_test.png",
+            "headerM": "/assets/img/projects/dilemma/iphone1.png",
+            "headerL": "/assets/img/projects/dilemma/iphone2.png",
+            "headerR": "/assets/img/projects/dilemma/iphone3.png",            
             "voorb": "voorb.png"
         },
         "screensM": [
@@ -35,10 +35,10 @@
         "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
         "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
-            "preview": "../assets/img/dilemma_test.png",
-            "headerL": "../assets/img/projects/humo/desk_left.png",
-            "headerM": "../assets/img/projects/humo/desk_mid.png",
-            "headerR": "../assets/img/projects/humo/desk_right.png",
+            "preview": "/assets/img/dilemma_test.png",
+            "headerL": "/assets/img/projects/humo/desk_left.png",
+            "headerM": "/assets/img/projects/humo/desk_mid.png",
+            "headerR": "/assets/img/projects/humo/desk_right.png",
             "voorb": "voorb.png"
         },
         "screensM": [
@@ -65,11 +65,11 @@
         "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your",
         "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
         "images": {
-            "preview": "../assets/img/header_imac_left.png",
-            "headerL": "../assets/img/projects/tinnepot/desk_left.png",
-            "headerM": "../assets/img/projects/tinnepot/desk_mid.png",
-            "headerR": "../assets/img/projects/tinnepot/desk_right.png",
-            "voorb": "../assets/img/header_imac_right.png"
+            "preview": "/assets/img/header_imac_left.png",
+            "headerL": "/assets/img/projects/tinnepot/desk_left.png",
+            "headerM": "/assets/img/projects/tinnepot/desk_mid.png",
+            "headerR": "/assets/img/projects/tinnepot/desk_right.png",
+            "voorb": "/assets/img/header_imac_right.png"
         },
         "screensM": [
             "tinnepot/m1.png", 

@@ -1,5 +1,4 @@
 [
-    
     {
         "id": "2",
         "title": "Dilemmas",
@@ -10,7 +9,8 @@
             "preview": "../assets/img/dilemma_test.png",
             "headerM": "../assets/img/projects/dilemma/iphone1.png",
             "headerL": "../assets/img/projects/dilemma/iphone2.png",
-            "headerR": "../assets/img/projects/dilemma/iphone3.png",            "voorb": "voorb.png"
+            "headerR": "../assets/img/projects/dilemma/iphone3.png",            
+            "voorb": "voorb.png"
         },
         "screensM": [
             "dilemma/m1.png", 

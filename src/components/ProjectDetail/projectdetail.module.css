@@ -10,6 +10,9 @@
     overflow: hidden;
 }
 
+.img_list_none {
+    height: 1rem;
+}
 
 .content_pos {
     width: 100vw;
@@ -49,9 +52,12 @@
     margin-top: -15rem;
 }
 
+.img_list_none {
+    height: 1rem;
+}
+
 .nav {
     overflow: hidden;
-
 }
 
 .content_detail {

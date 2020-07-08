@@ -9,7 +9,7 @@
             "preview": "/assets/img/dilemma_test.png",
             "headerM": "/assets/img/projects/dilemma/iphone1.png",
             "headerL": "/assets/img/projects/dilemma/iphone2.png",
-            "headerR": "/assets/img/projects/dilemma/iphone3.png",            
+            "headerR": "/assets/img/projects/dilemma/iphone3.png"        
         },
         "screensM": [
             "dilemma/m1.png", 
@@ -37,7 +37,7 @@
             "preview": "/assets/img/dilemma_test.png",
             "headerL": "/assets/img/projects/humo/desk_left.png",
             "headerM": "/assets/img/projects/humo/desk_mid.png",
-            "headerR": "/assets/img/projects/humo/desk_right.png",
+            "headerR": "/assets/img/projects/humo/desk_right.png"
         },
         "screensM": [
             "humo/m1.png", 
@@ -66,7 +66,7 @@
             "preview": "/assets/img/header_imac_left.png",
             "headerL": "/assets/img/projects/tinnepot/desk_left.png",
             "headerM": "/assets/img/projects/tinnepot/desk_mid.png",
-            "headerR": "/assets/img/projects/tinnepot/desk_right.png",
+            "headerR": "/assets/img/projects/tinnepot/desk_right.png"
         },
         "screensM": [
             "tinnepot/m1.png", 

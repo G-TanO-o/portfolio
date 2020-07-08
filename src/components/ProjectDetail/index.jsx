@@ -76,11 +76,14 @@ const ProjectDetail = () => {
                         </div>
                         <div className={`${styles.all_img}`}>
                             <p className={`${styles.screen_title}`}>Some more screens</p>
+                            {work.screensM.length > 1 ?
                             <div className={`${styles.screen}`}>
                                 {work.screensM.map(screen => (
                                     <img className={styles.img_list} src={`/assets/img/projects/${screen}`} alt="" key={screen}></img>
                                 ))}
                             </div>
+                            : <div className={styles.img_list_none} ></div>
+                        }
                            {work.screensD.length > 1 ? 
                             <div className={`${styles.screen}`}>
                             {work.screensD.map(screen => (

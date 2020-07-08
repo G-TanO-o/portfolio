@@ -34,6 +34,7 @@
             /* position: fixed; */
             width: 140rem;
             position: fixed;
+            background-image: url("/assets/img/blob.mp4");
         }
     .text_wrap {
         display: flex;

@@ -13,8 +13,8 @@ const Home = () => {
             <article className={`${styles.home_content}`}>
 
             <div className={`${styles.content}`}>
-                <div>
-                    <video className={`${styles.blob}`} playsinline autoPlay muted loop src={"/assets/img/blob.mp4"} width="2000"></video>
+                <div className={`${styles.blob}`}>
+                    {/* <video  playsinline autoPlay muted loop src={"/assets/img/blob.mp4"} width="2000"></video> */}
                 </div>
                 <div className={`${styles.text_wrap}`}>
                 <p className={`${styles.gaetan}`}>Gaetan</p>

@@ -36,7 +36,7 @@ const Projects = () => {
             <div className={`${styles.corner}`}>
             </div>
             <div className={`${styles.content}`}>
-                <video  className={`${styles.blob}`} playsinline autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
+                <video className={`${styles.blob}`} playsinline autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
                 <ul className={`${styles.ul_list}`}>
                     {store.dataStore.works.map(work => (
                         <NavLink to={`${ROUTES.projectDetail.to}${work.id}`}  key={work.id} className={`${styles.li_link}`}  onMouseEnter={() => loadDetail(work.id)}

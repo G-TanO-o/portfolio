@@ -25,7 +25,7 @@ const ProjectDetail = () => {
         return(       
         <>
             <div className={`${styles.nav}`}>
-            <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
+            <video className={`${styles.blob}`} playsinline autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
             <Nav color="white"/>
             </div>
         {dataStore.loading ? (

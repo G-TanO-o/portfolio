@@ -1,23 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './App.css'
-import { BrowserRouter } from "react-router-dom"
-import DataStore from './stores/DataStore';
-
-const store = new DataStore();
-
-store.loadData();
-console.log("dit is works from index.js", store.works);
-
+import { BrowserRouter } from "react-router-dom";
+import 'mobx-react-lite/batchingForReactDom'
 
 ReactDOM.render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-    document.getElementById("root")
-  );
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
-serviceWorker.unregister();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.register();
+

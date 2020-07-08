@@ -12,7 +12,7 @@ const About = () => {
             <video className={`${styles.blob}`} playsinline loop muted autoplay src={"/assets/img/blob.mp4"}></video>
             <article className={`${styles.about}`}>
                 <div className={`${styles.content}`}>
-                    <h2 className={`${styles.title}`}>Hello,</h2>
+                    <h2 className={`${styles.title}`}>Hi,</h2>
                     <p className={`${styles.intro}`}>My name is <span className={`${styles.name_vet}`}>Gaetan Ferhah</span>, I’m a last year student <a href={"https://www.devine.be/"} className={`${styles.devine}`}>Devine</a> at the Howest University College-KASK</p>
                     <div className={`${styles.img_container}`}>
                     <span className={`${styles.border}`}></span>

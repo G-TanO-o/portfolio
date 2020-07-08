@@ -25,7 +25,7 @@ function App() {
           <Route path={ROUTES.menu}>
             <Menu />
           </Route>
-          <Route path={ROUTES.feed} exact>
+          <Route path="/" exact>
             <Feed />
           </Route>
 

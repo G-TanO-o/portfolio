@@ -9,7 +9,7 @@ const About = () => {
     return useObserver( () => 
         <>
             <Nav/>
-            <video className={`${styles.blob}`} playsinline autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
+            <video className={`${styles.blob}`} autoPlay playsinline muted loop src={"/assets/img/blob.mp4"}></video>
             <article className={`${styles.about}`}>
                 <div className={`${styles.content}`}>
                     <h2 className={`${styles.title}`}>Hi,</h2>

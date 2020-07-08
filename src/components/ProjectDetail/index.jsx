@@ -1,7 +1,7 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
 import Nav from "../Nav";
-import styles from "../ProjectDetail/projectdetail.module.css";
+import styles from "./projectdetail.module.css";
 import { useParams } from "react-router-dom";
 import {useStores} from "../../hooks";
 import { Picture } from "react-responsive-picture";
@@ -25,29 +25,23 @@ const ProjectDetail = () => {
         return(       
         <>
             <div className={`${styles.nav}`}>
-            <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
-
-                <Nav color="white"/>
+            <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
+            <Nav color="white"/>
             </div>
-
         {dataStore.loading ? (
         <p className="songs__status">Loading</p>
-        
         ) : work !== undefined ? (
-
             <article className={`${styles.content_detail}`}>
                 <div className={`${styles.detail_headet_text}`}>
                     <h2 className={`${styles.title}`}>{work.title}</h2>
                     <p className={`${styles.uitleg}`}><span className={`${styles.uitleg_quote}`}>"</span>{work.uitleg}<span className={`${styles.uitleg_quote}`}>"</span></p>
                 </div>
                 <div className={`${styles.header_img_container}`}>
-
                     <div className={`${styles.header_img_full_width}`}>
                         <img className={`${styles.header_img_full_width_left}`} src={work.images.headerL} alt=""/>
                         <img className={`${styles.header_img_full_width_mid}`} src={work.images.headerM} alt=""/>
                         <img className={`${styles.header_img_full_width_right}`} src={work.images.headerR} alt=""/>
                     </div>
-
                     <Picture className={`${styles.img_header}`}
                         sources = {[                    
                             {
@@ -67,10 +61,8 @@ const ProjectDetail = () => {
                             }
                         ]}
                     />
-                    {/* <img className={`${styles.img_header}`} src={work.images.header} alt=""/> */}
                     <span className={styles.opvul_img} ></span>
                 </div>
-                {/* <p className={`${styles.about}`}>About</p> */}
                 <div className={`${styles.content_backcolor}`}>
                     <div className={`${styles.content}`}>
                         <div className={`${styles.content_pos}`}>
@@ -79,9 +71,7 @@ const ProjectDetail = () => {
                                     <p className={`${styles.intro_vet}`}>
                                     {work.opdracht}</p>
                                     <p className={`${styles.intro_deel1}`}>{work.workproces}</p>
-                                    {/* <span className={`${styles.underline}`}> own content </span> */}
                                 </div>
-                                {/* <img className={`${styles.img_content}`} src={work.images.headerM} alt=""/> */}
                             </div>
                         </div>
                         <div className={`${styles.all_img}`}>
@@ -96,16 +86,11 @@ const ProjectDetail = () => {
                             {work.screensD.map(screen => (
                             <img className={styles.img_list} src={`/assets/img/projects/${screen}`} alt="" key={screen}></img>
                         ))}
-                            </div>
-                            : <div></div>
-                        }
-                        
+                        </div>
+                        : <div></div>}
                         </div>
                      </div>
                 </div>
-                    {/* {work.allScreens.map(screen => (
-                        <img className={`${styles.img}`} src={screen} alt={screen}/>
-                      */}
                     <span className={`${styles.line}`}></span>
                 <section className={`${styles.info}`}>
                     <div className={`${styles.info_section}`}>
@@ -125,7 +110,6 @@ const ProjectDetail = () => {
                         {work.tools.map(tool => (
                         <p className={`${styles.info_text}`} key={tool}>{tool}</p>
                         ))}
-                        
                     </div>
                 </section>
                 <Footer />

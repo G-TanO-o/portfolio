@@ -9,9 +9,6 @@ const store = {
 
 store.dataStore.loadData();
 window.store = store;
-console.log(store);
-
-
 
 export const storesContext = createContext(store);
  

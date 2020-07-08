@@ -1,7 +1,7 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
 
-import styles from "../Menu/menu.module.css";
+import styles from "./menu.module.css";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../consts";
 
@@ -18,17 +18,12 @@ const Menu = ({ open, setOpen }) => {
 
     return useObserver( () => 
         <> 
-
-        
             <div className={`${styles.menu} ${open === true ? "open" : "closed"}`}>
-            <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
-
+            <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
                 <div className={`${styles.menu_pos}`}>
                 <div className={`${styles.menu_click}`}>
-                    {/* <h1 className={`${styles.title}`}>Menu</h1> */}
                     <p className={`${styles.close}`} onClick={e => onClickClose()}>X <span className={`${styles.close_back}`}>X</span></p>
                 </div>
-
                 <div className={`${styles.wrap}`}>
                     <nav className={`${styles.nav_menu}`}>
                         <ul>
@@ -48,9 +43,7 @@ const Menu = ({ open, setOpen }) => {
                     </nav>
                 </div>
                 </div>
-                
             </div>
-           
         </>
     )
     

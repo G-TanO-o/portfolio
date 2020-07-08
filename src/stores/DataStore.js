@@ -9,12 +9,10 @@ class DataStore {
     this.works = [];
     this.currentProfiel = undefined;
     this.hoverWork = undefined;
-    console.log('datastore, set: check', this.hoverWork);
     this.loading = false;
   }
 
   
-
   selectWorkById = (id) => {
     if(this.works.length === 0){
       console.log('niets in de store');

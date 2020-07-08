@@ -1,7 +1,3 @@
-import { decorate, configure} from 'mobx';
-
-configure({enforceActions: 'observed'});
-
 class Work {
     constructor({id, title, uitleg, opdracht, workproces, images, screensM, screensD, client, team, year, tools}) {
         this.id = id;
@@ -18,9 +14,5 @@ class Work {
         this.tools = tools;
     }
 }
-
-decorate(Work, {
-    // id: observable,
-  });
 
 export default Work;

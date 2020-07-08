@@ -1,6 +1,6 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
-import styles from "../About/about.module.css";
+import styles from "./about.module.css";
 
 import Nav from "../Nav";
 import Footer from "../Footer";
@@ -9,14 +9,14 @@ const About = () => {
     return useObserver( () => 
         <>
             <Nav/>
-            <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+            <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
             <article className={`${styles.about}`}>
                 <div className={`${styles.content}`}>
                     <h2 className={`${styles.title}`}>Hi,</h2>
-                    <p className={`${styles.intro}`}>My name is <span className={`${styles.name_vet}`}>Gaetan Ferhah</span>, I’m a last student at <a href={"https://www.devine.be/"} className={`${styles.devine}`}>Devine <img className={`${styles.vraagteken}`} src={"../assets/img/uitleg.svg"} alt=""/></a>, Howest KASK.</p>
+                    <p className={`${styles.intro}`}>My name is <span className={`${styles.name_vet}`}>Gaetan Ferhah</span>, I’m a last student at <a href={"https://www.devine.be/"} className={`${styles.devine}`}>Devine <img className={`${styles.vraagteken}`} src={"/assets/img/uitleg.svg"} alt=""/></a>, Howest KASK.</p>
                     <div className={`${styles.img_container}`}>
                     <span className={`${styles.border}`}></span>
-                    <img className={`${styles.img}`} src={"../assets/img/me.png"} alt=""/>
+                    <img className={`${styles.img}`} src={"/assets/img/me.png"} alt=""/>
                     <span className={`${styles.back}`}></span>
                     </div>
                     <p className={`${styles.text}`}>All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.
@@ -29,38 +29,6 @@ const About = () => {
                     scientific. MURPH You say science is about admitting what we don’t know. DONALD She’s got you there.
                     COOPER (hands her pieces) Start looking after our stuff. Donald looks at Cooper, admonishing. Cooper shrugs. COOPER Fine. Murph, you wanna talk science, don’t just tell me you’re scared of some ghost - record the facts, analyze, present your conclusions. MURPH Sure. Cooper gets up, grabs his keys. DONALD Hold up. (Off look.) Parent-teacher conferences. ’Parent’ - not ’grandparent’.
                     </p>
-                    <div className={`${styles.rocket}`}>
-                        <div className={`${styles.rocket_center}`}>
-          <div>^</div>
-         <div>/¨\</div>
-        <div>/==\</div>
-        <div>|---|</div>
-        <div>|---|</div>
-        <div>|---|</div>
-       <div>/____\</div>
-       <div>|-----|</div>
-       <div>|-----|</div>
-       <div>|-----|</div>
-       <div>|-----|</div>      
-      <div>/|o|o.|\</div>
-     <div>/ll|ii|iii|ll\</div>
-    <div>/_|_.|.__|__\</div>
-       <div>/_\/_\</div>
-       <div>######</div>
-      <div>########</div>
-       <div>##########</div>
-        <div>###########</div>
-        <div>############</div>
-         <div>#############</div>
-         <div>###############</div>
-         <div>#################</div>
-         <div>###################</div>
-         <div>######################</div>
-         <div>#########################</div>
-         <div>############################</div>
-         <div>#############################</div>
-         </div>
-                    </div>
                     <p className={`${styles.explain}`}>Dit zijn de eertse paar paginas van het script van de beste film ooit gemaakt (2020).<br></br>
                     INTERSTELLAR</p>
                 </div>

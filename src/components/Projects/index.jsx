@@ -1,7 +1,7 @@
 import React from 'react';
 import { useObserver } from "mobx-react-lite";
 import Nav from "../Nav";
-import styles from "../Projects/projects.module.css";
+import styles from "./projects.module.css";
 import { useStores } from "../../hooks";
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../consts';
@@ -26,10 +26,8 @@ const Projects = () => {
         console.log(hoverWork);
 
         return(
-
         <>
         <div className={`${styles.grid_container}`}>
-
             <div className={`${styles.header}`}>
             <Nav color="black"/>
             </div>
@@ -38,14 +36,13 @@ const Projects = () => {
             <div className={`${styles.corner}`}>
             </div>
             <div className={`${styles.content}`}>
-                <video  className={`${styles.blob}`} autoPlay muted loop src={"../assets/img/blob.mp4"}></video>
+                <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
                 <ul className={`${styles.ul_list}`}>
                     {store.dataStore.works.map(work => (
                         <NavLink to={`${ROUTES.projectDetail.to}${work.id}`}  key={work.id} className={`${styles.li_link}`}  onMouseEnter={() => loadDetail(work.id)}
                         >
                              <li  className={`${styles.li_list}`} work={work}>{work.title}</li>
                         </NavLink>
-                   
                     ))}
                 </ul>
 {(hoverWork !== undefined) ? 
@@ -58,39 +55,24 @@ const Projects = () => {
                     </div>
 
                     <img className={`${styles.img}`} src={`${hoverWork.images.headerM}`} alt=""/>
-
-
-                </div>
-                
+                 </div> 
                 <NavLink to={`${ROUTES.projectDetail.to}${hoverWork.id}`}>
-                    <img className={`${styles.arrow_to}`} src={"../assets/img/back_arrow.svg"} alt=""/>
+                    <img className={`${styles.arrow_to}`} src={"/assets/img/back_arrow.svg"} alt=""/>
                 </NavLink>
                 </div>
-
-:  <div className={`${styles.content_hover}`}>
-<div className={`${styles.test}`}>
+                :  <div className={`${styles.content_hover}`}>
+    <div className={`${styles.test}`}>
                     <div className={`${styles.text}`}>
                         <p className={`${styles.preview_title}`}>Hover on a project</p>
                         <p className={`${styles.intro}`}>Then you will see some info</p>
                     </div>
-
-                    
-
-                </div>
-
-</div>}
-
-                       
-                        
-
+                    </div>
+                    </div>}
             </div>
             <div className={`${styles.foot}`}>
                 <h1>foot</h1>
             </div>
-
         </div>
-            
-           
         </>)
    } )
     

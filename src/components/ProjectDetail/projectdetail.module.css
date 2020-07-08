@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/img/back_detail.png");
+    /* background-image: url("../../assets/img/back_detail.png"); */
     background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;

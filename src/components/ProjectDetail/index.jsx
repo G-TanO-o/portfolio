@@ -84,7 +84,7 @@ const ProjectDetail = () => {
                         <div className={`${styles.filmpje}`}>
                         {work.filmpje !== undefined ?
                             <Filmpje />
-                        : <div className={styles.img_list_none} >wordt niet getoond</div>
+                        : <div className={styles.img_list_none}></div>
                         }
                         </div>
                         

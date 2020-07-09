@@ -10,9 +10,6 @@
     overflow: hidden;
 }
 
-.img_list_none {
-    height: 1rem;
-}
 
 .content_pos {
     width: 100vw;
@@ -42,6 +39,21 @@
     /* border-radius: 2rem; */
 }
 
+.img_list_none {
+    height: 1rem;
+}
+
+.filmpje {
+    width: 98vw;
+    height: auto;
+    max-width: 96rem;
+    margin-top: 4rem;
+}
+
+}
+
+.img_list_none {
+    height: 1rem;
 }
 
 .blob {
@@ -52,19 +64,16 @@
     margin-top: -15rem;
 }
 
-.img_list_none {
-    height: 1rem;
-}
-
 .nav {
     overflow: hidden;
+
 }
 
 .content_detail {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url("../../assets/img/back_detail.png"); */
+    background-image: url("../../assets/img/back_detail.png");
     background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;

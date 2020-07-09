@@ -14,14 +14,14 @@ const Home = () => {
 
             <div className={`${styles.content}`}>
                 <div>
-                    <video className={`${styles.blob}`} autoplay playsinline loop src={"/assets/img/blob.mp4"} width="2000"></video>
+                    <video className={`${styles.blob}`} autoplay playsinline webkit-playsinline loop src={"/assets/img/blob.mp4"} width="2000"></video>
                 </div>
                 <div className={`${styles.text_wrap}`}>
                 <p className={`${styles.gaetan}`}>Gaetan</p>
                 <p className={`${styles.text}`}>I’m a student Digital Design and Development.</p>
                 <p className={`${styles.ferhah}`}>Ferhah</p>
                 <NavLink to={ROUTES.projects}>
-                    <img className={`${styles.arrow}`} src={"/assets/img/arrow_long.png"} alt=""/>
+                    <img className={`${styles.arrow}`} src={"/assets/img/arrow_long.png"} alt="arrow"/>
                 </NavLink>
                 </div>
             </div>  

@@ -1,15 +1,15 @@
 [
+    
     {
         "id": "2",
         "title": "Dilemmas",
-        "uitleg": "A new Webapp that helps you all your dilemmas. Ask and get ask",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing.",
-        "workproces": "workproces hiet komt wat anders. All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "uitleg": "A social network that helps you with all your dilemmas. Ask and get asked.",
+        "opdracht": "Creating a new social network webapp in react where people can interact with eachother and share their dilemmas. Like, add and comment on dilemmas.",
+        "workproces": "A school assignment to get to know React and its functionalities. We were asked to think of a social network webapp where users can interact with each other. I decided to create a  social network for dilemmas. On this app you could post your own dilemma to see which option is viewed as the ‘most popular’ option. The different functionalities were: post your dilemma, vote on the best option, add comments to dilemmas and save dilemmas to your favourites.",
         "images": {
-            "preview": "/assets/img/dilemma_test.png",
-            "headerM": "/assets/img/projects/dilemma/iphone1.png",
-            "headerL": "/assets/img/projects/dilemma/iphone2.png",
-            "headerR": "/assets/img/projects/dilemma/iphone3.png"        
+            "headerM": "../assets/img/projects/dilemma/iphone1.png",
+            "headerL": "../assets/img/projects/dilemma/iphone2.png",
+            "headerR": "../assets/img/projects/dilemma/iphone3.png"
         },
         "screensM": [
             "dilemma/m1.png", 
@@ -22,22 +22,21 @@
         "screensD": [
             ""
         ],
-        "client": "client",
-        "team": "team",
+        "client": "Devine",
+        "team": "Me, myself and I",
         "year": 2020,
-        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+        "tools": ["React", "Figma"]
     },
     {
-        "id": "3b",
+        "id": "3",
         "title": "Humo",
-        "uitleg": "A webshop for humo with every week a new book",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your <span className={`${styles.undeline}`}>own content </span>in to see what it looks like with these font combinations. You can copy and paste your own content in to see what it looks like with these font combinations.",
-        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "uitleg": "A fully functional and responsive webshop for Humo, with every week a new book.",
+        "opdracht": "Creating a responsive webshop for HUMO magazine where you can shop their magazines and the newest book of the new social science fiction bookseries.",
+        "workproces": "A school assignment where we had to create a webshop for Humo, a belgian magazine brand. The webshop would sell books (paperback, hardcover and e-books), subscriptions (online and offline) and gadgets. We were also asked to add an emphasis on the ‘social science fiction’ bookseries that just came out. Each week the readers would receive a discount code for ‘the book of the week’. This also had to be encorporated in the functionalities of the webshop.",
         "images": {
-            "preview": "/assets/img/dilemma_test.png",
-            "headerL": "/assets/img/projects/humo/desk_left.png",
-            "headerM": "/assets/img/projects/humo/desk_mid.png",
-            "headerR": "/assets/img/projects/humo/desk_right.png"
+            "headerL": "../assets/img/projects/humo/desk_left.png",
+            "headerM": "../assets/img/projects/humo/desk_mid.png",
+            "headerR": "../assets/img/projects/humo/desk_right.png"
         },
         "screensM": [
             "humo/m1.png", 
@@ -51,22 +50,21 @@
             "humo/d2.png", 
             "humo/d4.png"
         ],
-        "client": "client",
-        "team": "team",
+        "client": "Devine X HUMO",
+        "team": "Me, myself and I",
         "year": 2020,
-        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+        "tools": ["Adobe Photoshop","Adobe Illustrator","Figma","PHP-Sql"]
     },
     {
         "id": "4",
         "title": "Tinnepot",
-        "uitleg": "The newest React webapp that helps you with all your dilemmas",
-        "opdracht": "All of this text is editable. Simply click anywhere in the paragraph or heading and start typing. You can copy and paste your",
-        "workproces": "All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content in to see what it looks like with these font combinations.You can copy and paste your own content in to see what it looks like with these font combinations. You can copy and paste your own.",
+        "uitleg": "Digitalizing the theater Tinnepot in Ghent in every way.",
+        "opdracht": "Designing a responsive platform for Tinnepot theater where the clients can view all the new theater acts. Giving them info about the plays and suggesting other plays they might like.",
+        "workproces": "I had to design a new fully responsive website for Tinnepot, where visitors could receive information about the upcoming plays, taking into account that the visitors would want to filter the results (location, genre..). Changing and modernising their current style, thus designing a digital create athmosphere and theater experience. Experimenting with different colors and typography to create a minimalistic yet accessible and creative design. This while keeping focus on the UX and UI aspects throughout the whole design process.",
         "images": {
-            "preview": "/assets/img/header_imac_left.png",
-            "headerL": "/assets/img/projects/tinnepot/desk_left.png",
-            "headerM": "/assets/img/projects/tinnepot/desk_mid.png",
-            "headerR": "/assets/img/projects/tinnepot/desk_right.png"
+            "headerL": "../assets/img/projects/tinnepot/desk_left.png",
+            "headerM": "../assets/img/projects/tinnepot/desk_mid.png",
+            "headerR": "../assets/img/projects/tinnepot/desk_right.png"
         },
         "screensM": [
             "tinnepot/m1.png", 
@@ -80,9 +78,116 @@
             "tinnepot/d2.png", 
             "tinnepot/d3.png"
         ],
-        "client": "client",
-        "team": "team",
-        "year": 2020,
-        "tools": ["Adobe Photoship","Adobe Illustrator","Figma"]
+        "client": "Devine X Tinnepot",
+        "team": "Me, myself and I",
+        "year": 2018,
+        "tools": ["Adobe Photoshop","Adobe Illustrator"]
+    }
+    ,
+    {
+        "id": "5",
+        "title": "Brussels Tour",
+        "uitleg": "A website for a thematic tour around Brussels: the Menace Tour. ",
+        "opdracht": "Altering the tours in Brussels to an alternative theme. Let’s discover Brussels’ “Menace Tour”. Discover all the places from a different perspective, through the eyes of a citizen or a terrorist.",
+        "workproces": "Designing and developing a whole new tour in Brussels. Staying away from the normal touristic places and taking the visitors somewhere else. Creating a design fot the website that fits the “menace” atmosphere of the tour. Offering different tours in the same theme, such as: which hidden preventive measures does Brussels have? Or where does a terrorist hide in a city like Brussels? Giving the visitors a unique experience. As well as developing a booking system for the users to book the tours. Allowing the user to rate the tour, creating a dynamic results page where the most popular tour will be highlighted.",
+        "images": {
+            "headerL": "../assets/img/projects/brusselTour/desk_left.png",
+            "headerM": "../assets/img/projects/brusselTour/desk_mid.png",
+            "headerR": "../assets/img/projects/brusselTour/desk_right.png"
+        },
+        "screensM": [
+            ""
+        ],
+        "screensD": [
+            "brusselTour/d1.png", 
+            "brusselTour/d2.png", 
+            "brusselTour/d3.png",
+            "brusselTour/d4.png"
+        ],
+        "client": "Devine",
+        "team": "Me, myself and I",
+        "year": 2018,
+        "tools": ["Adobe Photoship","Adobe Illustrator","HTML","CSS","Php-Sql"]
+    }
+    ,
+    {
+        "id": "6",
+        "title": "Rode Kruis",
+        "uitleg": "An activating onepager to get people to donate blood.",
+        "opdracht": "Concept development and designing a onepager for Rode Kruis Vlaanderen that activates and informs. To inspire people to donate blood on the train.",
+        "workproces": "Creating an activating and informative concept, keeping in mind the different factors why people donate or don’t donate blood. Through conducted research, I soon learned that one of the main factors why people don’t donate blood is ‘shortage of time’. So I decided to encorporate the time factor into my concept: donating on the train. To strengthen my concept through the design, the different letters of the blood types were left out. Throughout the whole design the letters A and O were faded, this to indicate which blood types were most needed. To support this campaign, I altered the design/ functionalities of the already existing app of NMBS (the belgian train system). Adding the functionality to see the different donate-trains and book a seat. ",
+        "images": {
+            "headerL": "../assets/img/projects/rodeKruis/desk_left.png",
+            "headerM": "../assets/img/projects/rodeKruis/desk_mid.png",
+            "headerR": "../assets/img/projects/rodeKruis/desk_right.png"
+        },
+        "screensM": [
+            ""
+        ],
+        "screensD": [
+            "rodeKruis/d1.png", 
+            "rodeKruis/d2.png", 
+            "rodeKruis/d3.png",
+            "rodeKruis/d4.png"
+        ],
+        "client": "Devine X Rode Kruis",
+        "team": "Me, myself and I",
+        "year": 2018,
+        "tools": ["Adobe Photoship","Adobe Illustrator"]
+    }
+    ,
+    {
+        "id": "7",
+        "title": "Kind&Gezin",
+        "uitleg": "An app to help parents on their new adventure and store their memories.",
+        "opdracht": "Designing a digital diary for new parents where they can add different moments, from going to the doctor to the baby taking his first steps.",
+        "workproces": "An app for Kind&Gezin where new parents can add moments of their child. Create a diary for your child and keep track of a:l the memorable moments. The app has multiple functionalities to help parents with their starting adventure. Practical: store medical records and doctors visits, adding the height and weight which will be visualised into diagrams. But also supporting memories and special moments, where parents can add cute pictures and stories. These pictures are placed in a (chronological) photobook so they are able to look back at everything. I also envisioned a sharing functionality, this to share their little diary with other family members or friends. Regarding promotional work, we had to make a video for the AppStore, where the app gets explained to new users.",
+        "images": {
+            "headerL": "../assets/img/projects/kindEnGezin/phone_left.png",
+            "headerM": "../assets/img/projects/kindEnGezin/phone_mid.png",
+            "headerR": "../assets/img/projects/kindEnGezin/phone_right.png"
+        },
+        "screensM": [
+            "kindEnGezin/m1.png", 
+            "kindEnGezin/m2.png", 
+            "kindEnGezin/m4.png", 
+            "kindEnGezin/m5.png",
+            "kindEnGezin/m6.png",
+            "kindEnGezin/m7.png",
+            "kindEnGezin/m8.png",
+            "kindEnGezin/m10.png"
+        ],
+        "screensD": [
+            ""
+        ],
+        "filmpje": "kindEnGezin/appstorepreview.mp4",
+        "client": "Devine X Kind&Gezin",
+        "team": "Me, myself and I",
+        "year": 2019,
+        "tools": ["Adobe Photoship","Adobe Illustrator","Sketch"]
+    }
+    ,
+    {
+        "id": "8",
+        "title": "Electric Avenue",
+        "uitleg": "Intro video for a webserie that will test Electrical Vehicles.",
+        "opdracht": "In this web series they will test all possible Electrical Vehicles. When a new electric monowheel comes on the market, they will be the first to go test it and push its limmits.",
+        "workproces": "As a school assignment for Zendmast we had to make an intro video for a webseries. Prior to the assignment we received a short briefing about how they saw the miniseries and what our goal would be. The key was to create a visual style that would match the vibe and style of the series. I decided to emphasise the movements and the speed of certain electrical vehicles. I found it quite challenging to create a sense of movement in the graphics, although frame per frame animation soon turned out to be the key for consistent and detailed movement patterns.",
+        "images": {
+            "headerL": "../assets/img/projects/electricAvenue/desk_left.png",
+            "headerM": "../assets/img/projects/electricAvenue/desk_mid.png",
+            "headerR": "../assets/img/projects/electricAvenue/desk_right.png"
+        },
+        "screensM": [
+            ""
+        ],
+        "screensD": [
+            ""
+        ],
+        "filmpje": "electricAvenue/Intro_electric_avenue.mp4",
+        "client": "Devine X Zendmast",
+        "team": "Me, myself and I",
+        "year": 2019,
+        "tools": ["Adobe After Effects"]
     }
 ]

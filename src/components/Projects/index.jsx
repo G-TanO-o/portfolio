@@ -36,7 +36,7 @@ const Projects = () => {
             <div className={`${styles.corner}`}>
             </div>
             <div className={`${styles.content}`}>
-                <video className={`${styles.blob}`} autoplay playsinline loop src={"/assets/img/blob.mp4"}></video>
+                <video className={`${styles.blob}`} autoplay playsinline webkit-playsinline loop src={"/assets/img/blob.mp4"}></video>
                 <ul className={`${styles.ul_list}`}>
                     {store.dataStore.works.map(work => (
                         <NavLink to={`${ROUTES.projectDetail.to}${work.id}`}  key={work.id} className={`${styles.li_link}`}  onMouseEnter={() => loadDetail(work.id)}
@@ -57,7 +57,7 @@ const Projects = () => {
                     <img className={`${styles.img}`} src={`${hoverWork.images.headerM}`} alt=""/>
                  </div> 
                 <NavLink to={`${ROUTES.projectDetail.to}${hoverWork.id}`}>
-                    <img className={`${styles.arrow_to}`} src={"/assets/img/back_arrow.svg"} alt=""/>
+                    <img className={`${styles.arrow_to}`} src={"/assets/img/back_arrow.svg"} alt="arrow"/>
                 </NavLink>
                 </div>
                 :  <div className={`${styles.content_hover}`}>

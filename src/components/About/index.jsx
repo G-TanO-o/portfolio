@@ -9,7 +9,7 @@ const About = () => {
     return useObserver( () => 
         <>
             <Nav color="white"/>
-            <video className={`${styles.blob}`} autoplay playsinline loop src={"/assets/img/blob.mp4"}></video>
+            <video className={`${styles.blob}`} autoplay playsinline webkit-playsinline loop src={"/assets/img/blob.mp4"}></video>
             <article className={`${styles.about}`}>
                 <div className={`${styles.content}`}>
                     <h2 className={`${styles.title}`}>Hi,</h2>
@@ -19,7 +19,7 @@ const About = () => {
                     <img className={`${styles.img}`} src={"/assets/img/me.png"} alt="me (Gaetan Ferhah)"/>
                     <span className={`${styles.back}`}></span>
                     </div>
-                    <p className={`${styles.text}`}>The option to study something with design seemed almost neutral to me since I've studied multi media design in high school and always had an interest in visual things. I like to think of myself as a visual thinker, ideas come to me as images. I always can think of a picture, how something would look before the words appear in my head.</p>
+                    <p className={`${styles.text}`}>The option to study something with design seemed almost natural to me since I've studied multi media design in high school and always had an interest in visual things. I like to think of myself as a visual thinker, ideas come to me as images. I always can think of a picture, how something would look before the words appear in my head.</p>
                     <p className={`${styles.text}`}>In 2017 I started my adventure in Devine and now we are here, only one internship and a bachelor thesis away from graduating. During the past three years I have learned a lot about design and development. </p>
                     <p className={`${styles.text}`}>I've learned a lot about design, this in various ways. From creating digital designs for multiple platforms, making animations to storyboarding and motion videos. Escpecially the motion graphics-part interests me. I find it amazing that motion has the ability to make your designs come alive. To create a whole world starting starting with a static design.</p>
                     <p className={`${styles.text}`}>On the development side, I have learned to work with HTML, CSS, Javascript, PHP, SQL and React. Some big words that basically mean that I can make (responvive) websites, digital platforms and (web) apps. I’m still learning a lot and I’m very eager to learn more about development.</p>

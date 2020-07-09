@@ -2,9 +2,7 @@
 @media only screen and (min-width: 300px) {
    
     .content_hover {
-       
-        display: block;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -12,13 +10,26 @@
     .blob {
         grid-area: content; 
         transform: rotate(-90deg) scale(2);
-        width: 100vw;
         height: 100vh;
         z-index: -1;
         position:fixed;
         margin-top: -10rem;
-        margin-left: -35rem;
+        margin-left: -45rem;
     }
+
+    .ul_list {
+        padding: 4rem;
+        text-align: left;
+        width: 90vw;
+        max-width: 46rem;
+        overflow: scroll;
+    }
+
+    .button_contactMe {
+        margin-top: 2rem;
+    }
+
+    
   
   }
 
@@ -30,9 +41,11 @@
 }
   
 .foot { 
-    grid-area: foot; 
+    grid-area: foot;
     background-color: white;
     border-top: .3rem solid black;
+    display: flex;
+    justify-content: flex-end;
 }
   
 .header { 
@@ -58,12 +71,11 @@
     width: 60vw;
     height: 80vh;
     display: none;
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     
 }
-.test {
+.content_wrap {
     display: flex;
     flex-direction: row;
     width: 60vw;
@@ -101,6 +113,28 @@
 .arrow_to {
     transform: rotate(180deg);
     margin-bottom: 2rem;
+    height: 10rem;
+    margin-top: -6rem;
+}
+
+.button_contactMe{
+    letter-spacing: .3rem;
+    color: black;
+    border: white solid .2rem;
+    background-color: white;
+    padding: 2rem 3rem 1.5rem 3rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'AcuminPro-Bold', sans-serif;
+
+}
+.button_img {
+    height: 2.2rem;
+    width: 2rem;
 }
 
 
@@ -122,12 +156,7 @@
     position:fixed;
 } */
 
-.ul_list {
-    padding: 4rem;
-    text-align: left;
-    width: 35vw;
-    /* max-width: 46rem; */
-}
+
 
 .li_link {
     text-decoration: none;
@@ -139,7 +168,8 @@
     text-transform: uppercase;
     color: white;
     width: auto;
-    text-align: left;}
+    text-align: left;
+}
 
 .li_list:hover {
 

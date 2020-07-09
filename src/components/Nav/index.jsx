@@ -14,7 +14,6 @@ const Nav = ({color}) => {
 
     const [open, setOpen] = useState(false);
     const menuId = "main-menu";
-    console.log(color);
     const { uiStore } = useStores();
 
     const currentPage = uiStore.currentPage;

@@ -14,16 +14,12 @@ const Projects = () => {
     return useObserver( () => {
 
         const loadDetail = (workId) => {
-            console.log('dit is de test', workId)
-            console.log(workId);
             const work = store.dataStore.selectWorkById(workId);
-            console.log('work', work);
 
             store.dataStore.setHoverWork(work);            
         };
 
         const hoverWork = store.dataStore.hoverWork;
-        console.log(hoverWork);
 
         return(
         <>
@@ -36,7 +32,9 @@ const Projects = () => {
             <div className={`${styles.corner}`}>
             </div>
             <div className={`${styles.content}`}>
-                <video className={`${styles.blob}`} autoplay playsinline webkit-playsinline loop src={"/assets/img/blob.mp4"}></video>
+                <video autoPlay muted playsInline loop className={`${styles.blob}`} width="2000">
+                    <source src={"/assets/img/blob.mp4"} type="video/mp4" />
+                </video>
                 <ul className={`${styles.ul_list}`}>
                     {store.dataStore.works.map(work => (
                         <NavLink to={`${ROUTES.projectDetail.to}${work.id}`}  key={work.id} className={`${styles.li_link}`}  onMouseEnter={() => loadDetail(work.id)}
@@ -45,9 +43,9 @@ const Projects = () => {
                         </NavLink>
                     ))}
                 </ul>
-{(hoverWork !== undefined) ? 
+                {(hoverWork !== undefined) ? 
                 <div className={`${styles.content_hover}`}>
-                <div className={`${styles.test}`}>
+                <div className={`${styles.content_wrap}`}>
                     <div className={`${styles.text}`}>
                         <p className={`${styles.preview_title}`}>{hoverWork.title}</p>
                         <p className={`${styles.intro}`}>{hoverWork.uitleg}</p>
@@ -61,16 +59,18 @@ const Projects = () => {
                 </NavLink>
                 </div>
                 :  <div className={`${styles.content_hover}`}>
-    <div className={`${styles.test}`}>
+                <div className={`${styles.content_wrap}`}>
                     <div className={`${styles.text}`}>
                         <p className={`${styles.preview_title}`}>Hover on a project</p>
                         <p className={`${styles.intro}`}>Then you will see some info</p>
                     </div>
-                    </div>
+                </div>
                     </div>}
             </div>
             <div className={`${styles.foot}`}>
-                <h1>foot</h1>
+            <a href = "mailto: ferhahgaetan@gmail.com" className={`${styles.button_contactMe}`}>
+                        Send me a mail<img className={`${styles.button_img}`} src="/assets/img/arrow_next.svg" alt=""/>
+                    </a>
             </div>
         </div>
         </>)

@@ -12,9 +12,9 @@ const Footer = () => {
             <footer className={`${styles.footer}`}>
                 <div className={`${styles.footer_wrap}`}>
                     <p className={`${styles.youlike}`}>You like what you see?</p>
-                    <button className={`${styles.button_contactMe}`}>
-                        Send me a mail <img className={`${styles.button_img}`} src="/assets/img/arrow_next.svg" alt=""/>
-                    </button>
+                    <a href = "mailto: ferhahgaetan@gmail.com" className={`${styles.button_contactMe}`}>
+                        Send me a mail<img className={`${styles.button_img}`} src="/assets/img/arrow_next.svg" alt=""/>
+                    </a>
                 </div>
             </footer>
             

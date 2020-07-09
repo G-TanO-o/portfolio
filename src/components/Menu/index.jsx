@@ -7,20 +7,22 @@ import { ROUTES } from "../../consts";
 
 const Menu = ({ open, setOpen }) => {
 
-    console.log(open);
+   
     
     
     const onClickClose = () => {
         setOpen(false); 
-        console.log(open);
+        
               }
 
 
     return useObserver( () => 
         <> 
             <div className={`${styles.menu} ${open === true ? "open" : "closed"}`}>
-            <video  className={`${styles.blob}`} autoPlay muted loop src={"/assets/img/blob.mp4"}></video>
-                <div className={`${styles.menu_pos}`}>
+            <video autoPlay muted playsInline loop className={`${styles.blob}`} width="2000">
+                <source src={"/assets/img/blob.mp4"} type="video/mp4" />
+            </video>
+            <div className={`${styles.menu_pos}`}>
                 <div className={`${styles.menu_click}`}>
                     <p className={`${styles.close}`} onClick={e => onClickClose()}>X <span className={`${styles.close_back}`}>X</span></p>
                 </div>

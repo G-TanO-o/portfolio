@@ -1,5 +1,1 @@
-<svg width="465" height="86" viewBox="0 0 465 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="43" cy="43" r="41.5" stroke="black" stroke-width="3"/>
-<path d="M32.9393 41.9393C32.3536 42.5251 32.3536 43.4749 32.9393 44.0607L42.4853 53.6066C43.0711 54.1924 44.0208 54.1924 44.6066 53.6066C45.1924 53.0208 45.1924 52.0711 44.6066 51.4853L36.1213 43L44.6066 34.5147C45.1924 33.9289 45.1924 32.9792 44.6066 32.3934C44.0208 31.8076 43.0711 31.8076 42.4853 32.3934L32.9393 41.9393ZM51 41.5L34 41.5L34 44.5L51 44.5L51 41.5Z" fill="black"/>
-<path d="M465 43L41 43" stroke="black" stroke-width="3"/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.9 41.83"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;}.cls-1{stroke-width:1.46px;}.cls-2{stroke-width:1.45px;}</style></defs><circle class="cls-1" cx="20.91" cy="20.91" r="20.18"/><path d="M170.12,63.8a.72.72,0,0,0,0,1l4.64,4.65a.73.73,0,0,0,1-1l-4.13-4.12,4.13-4.13a.73.73,0,0,0-1-1Zm8.78-.21h-8.27v1.46h8.27Z" transform="translate(-154.1 -43.4)"/><path class="cls-2" d="M300,64.32H174" transform="translate(-154.1 -43.4)"/></svg>

@@ -18,12 +18,12 @@ const ProjectDetail = () => {
     return useObserver( () => {
     
     const work = dataStore.selectWorkById(id);
-    console.log("dit is work", work);
         return(       
         <>
             <div className={`${styles.nav}`}>
-            <video  className={`${styles.blob}`} autoplay playsinline webkit-playsinline loop src={"../assets/img/blob.mp4"}></video>
-
+            <video autoPlay muted playsInline loop className={`${styles.blob}`} width="2000">
+                <source src={"/assets/img/blob.mp4"} type="video/mp4" />
+            </video>
                 <Nav color="white"/>
             </div>
 
@@ -84,7 +84,7 @@ const ProjectDetail = () => {
                         <div className={`${styles.filmpje}`}>
                         {work.filmpje !== undefined ?
                             <Filmpje />
-                        : <div className={styles.img_list_none} ></div>
+                        : <div className={styles.img_list_none} >wordt niet getoond</div>
                         }
                         </div>
                         

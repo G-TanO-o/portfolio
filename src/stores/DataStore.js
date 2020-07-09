@@ -15,7 +15,6 @@ class DataStore {
   
   selectWorkById = (id) => {
     if(this.works.length === 0){
-      console.log('niets in de store');
     }
     return this.works.find(work => work.id === id);
   }
@@ -25,8 +24,6 @@ class DataStore {
     this.setLoading(true);
     const response = await fetch("/data.json");
     const jsonData = await response.json();
-    console.log("jresponse", response);
-    console.log("json data", jsonData);
     jsonData.forEach(this.addWork);
 
     this.setLoading(false);
@@ -41,7 +38,6 @@ class DataStore {
   };
 
   setHoverWork = work => {
-    console.log('datastore, set', work);
     this.hoverWork = work;
   };
  

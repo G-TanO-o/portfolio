@@ -1,5 +1,5 @@
 class Work {
-    constructor({id, title, uitleg, opdracht, workproces, images, screensM, screensD, client, team, year, tools}) {
+    constructor({id, title, uitleg, opdracht, workproces, images, screensM, screensD, client, team, year, tools, filmpje=undefined}) {
         this.id = id;
         this.title = title;
         this.uitleg = uitleg;
@@ -12,6 +12,7 @@ class Work {
         this.team = team;
         this.year = year;
         this.tools = tools;
+        this.filmpje = filmpje;
     }
 }
 

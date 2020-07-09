@@ -4,7 +4,6 @@ import { useObserver } from "mobx-react-lite";
 const Hamburger = ({ color, open, setOpen, ...props }) => {
 
     const isExpanded = open ? true : false;
-    console.log(color);
 
     return useObserver( () => 
         <>

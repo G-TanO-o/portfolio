@@ -1,3 +1,18 @@
+@media only screen and (min-width: 300px) {
+   
+    .blob {
+        /* width: 200rem; */
+        height: 120rem;
+        z-index: -1;
+        position:fixed;
+        /* left: ; */
+        /* top: 0rem; */
+        /* overflow: hidden; */
+        margin-top: -20rem;
+        margin-left: -20rem;
+    }
+    
+}
 .about {
     display: flex;
     flex-direction: column;
@@ -27,9 +42,10 @@
 
 
 .title {
-    font-family: 'Emberly-Black', sans-serif;
     font-size: 6.4rem;
     margin-bottom: 1rem;
+    font-family: 'AcuminPro-Bold', sans-serif;
+
 }
 
 .intro {
@@ -189,7 +205,7 @@
         /* left: ; */
         /* top: 0rem; */
         /* overflow: hidden; */
-        margin-top: -10rem;
+        margin-top: -20rem;
         
     }
     

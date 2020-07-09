@@ -14,7 +14,7 @@ const Home = () => {
 
             <div className={`${styles.content}`}>
                 <div>
-                    <video className={`${styles.blob}`} playsinline loop muted autoplay src={"/assets/img/blob.mp4"} width="2000"></video>
+                    <video className={`${styles.blob}`} autoplay playsinline loop src={"/assets/img/blob.mp4"} width="2000"></video>
                 </div>
                 <div className={`${styles.text_wrap}`}>
                 <p className={`${styles.gaetan}`}>Gaetan</p>

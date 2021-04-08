@@ -1,6 +1,5 @@
 import React from "react"
 import { useObserver } from "mobx-react-lite";
-import styles from "../Filmpje/filmpje.module.css";
 import { useParams } from "react-router-dom";
 import {useStores} from "../../hooks";
 
